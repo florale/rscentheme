@@ -126,7 +126,8 @@
    color: var(--keyword);
 } 
 .ace_comment {
- color: var(--comment);
+  font-style: italic;
+  color: var(--comment);
 } 
 .ace_identifier,
 .ace_variable {
@@ -705,7 +706,7 @@ utCenter,
 
 .js-focus-visible .focus-visible:not(.gwt-MenuBar),
 input[type="checkbox"].focus-visible {
-  outline: var(--button-bg) solid 2px !important;
+  outline: black solid 0.5px !important;
   outline-offset: -1px !important;
 }
 

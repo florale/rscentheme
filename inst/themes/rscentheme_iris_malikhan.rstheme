@@ -126,7 +126,8 @@
    color: var(--keyword);
 } 
 .ace_comment {
- color: var(--comment);
+  font-style: italic;
+  color: var(--comment);
 } 
 .ace_identifier,
 .ace_variable {

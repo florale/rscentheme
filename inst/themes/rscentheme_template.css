@@ -21,7 +21,6 @@
   --language-constant: #944C4C;
   --numeric-constant: #D0748B;
   --string: #E9C9CE;
-  --regex: rgb(209, 105, 105);
   --keyword: #F1DDCF;
   --comment: #F4E7E7;
   --variable: #F8F8F0;
@@ -37,6 +36,7 @@
  
   --type-declaration: #B7D0F0;
   --function-declaration: #C99696;
+  --regex: rgb(209, 105, 105);
 
   /* console */
   --console-error: #944C4C;
@@ -126,7 +126,8 @@
    color: var(--keyword);
 } 
 .ace_comment {
- color: var(--comment);
+  font-style: italic;
+  color: var(--comment);
 } 
 .ace_identifier,
 .ace_variable {
@@ -706,7 +707,7 @@ utCenter,
 
 .js-focus-visible .focus-visible:not(.gwt-MenuBar),
 input[type="checkbox"].focus-visible {
-  outline: var(--button-bg) solid 2px !important;
+  outline: black solid 0.5px !important;
   outline-offset: -1px !important;
 }
 
