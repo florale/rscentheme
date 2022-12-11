@@ -20,7 +20,7 @@
   /* syntax */
   --language-constant: #58715C;
   --numeric-constant: #7EA284;
-  --string: #C4D3B9;
+  --string: #C9D5CA;
   --keyword: #dfb595;
   --comment: #7B7B8F;
   --variable: #FAF9EE;
@@ -40,7 +40,7 @@
 
   /* console */
   --console-error: #8F6F64;
-  --console-keyword: #B2C8B6;
+  --console-keyword: #EBD4CB;
   --console-language-constant: #8F6F64;
 
   /* markdown */
@@ -68,7 +68,7 @@
   --xtcol10: #8ae234;
 
   /* buttons */
-  --button: #2F5039;
+  --button: #324434;
 
   /* fonts */
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -78,7 +78,7 @@
   --bg: #2c2c2c;
   --font-fg: #ffffff;
   --divider-bg: #2c2c2c;
-  --button-bg: #2F5039;
+  --button-bg: #324434;
   --button-bg-selected: #2c2c2c;
   --border: #0a0a0a;
   --input-bg: #141414;
@@ -91,7 +91,7 @@
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: #282828;
   --scrollbar-bg-hover: #333333;
-  --scrollbar-bg-active: #2F5039;
+  --scrollbar-bg-active: #324434;
   --scrollbar-border: solid 2px black;
   --autocomplete-bg: #222222;
   --autocomplete-fg: #dddddd;
