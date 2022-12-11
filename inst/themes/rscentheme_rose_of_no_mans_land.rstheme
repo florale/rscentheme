@@ -24,6 +24,7 @@
   --regex: rgb(209, 105, 105);
   --keyword: #F1DDCF;
   --comment: #F4E7E7;
+  --variable: #F8F8F0;
   --support-function: #F4EDE8;
   --operator:  #B0CCA6;
   --paren-col0: #FBBFA5;
@@ -34,7 +35,6 @@
   --paren-col5: #EE6C9D;
   --paren-col6: #FDDBC8;
  
-  --variable: #8CAACB;
   --type-declaration: #B7D0F0;
   --function-declaration: #C99696;
 
@@ -48,6 +48,7 @@
   --inline-code: var(--string);
   --markup-heading: #C99696;
   --markup-list: #EE6C9D;
+  --meta-tag: #90766B;
 
   /* terminal */
   --terminal-background: #141414;
@@ -66,6 +67,8 @@
   --xtcol9: #DB9B88;
   --xtcol10: #8ae234;
 
+  /* hover menu */
+  --menu: #613232;
 }
 .ace_gutter { /* margin on the side */ 
   background: var(---gutter-background);
@@ -101,6 +104,10 @@
 .ace_comment {
  color: var(--comment);
 } 
+.ace_identifier,
+.ace_variable {
+  color: var(--variable);
+}
 .ace_support.ace_function {
  color: var(--support-function);
 } 
@@ -142,7 +149,6 @@
   border: 0 !important;
   background-color: rgba(128, 128, 128, 0.5);
 } 
-
 /* rmarkdown code */
 .ace_marker-layer .ace_foreign_line { 
   position: absolute;
@@ -187,7 +193,7 @@ border: 1px solid rgba(255, 255, 255, 0.25);
  color: rgba(255, 255, 255, 0.25);
 }
 .ace_entity.ace_name.ace_tag, .ace_entity.ace_other.ace_attribute-name, .ace_meta.ace_tag, .ace_string.ace_regexp, .ace_variable {
-  color: #90766B;
+  color: var(--meta-tag);
 }
 .ace_marker-layer .ace_active_debug_line {
   position: absolute;
@@ -197,10 +203,6 @@ border: 1px solid rgba(255, 255, 255, 0.25);
 .ace_fold {
   background-color: #999dd9;
   border-color: #F8F8F2;
-}
-.ace_identifier,
-.ace_variable {
-  color: #EFF4FB;
 }
 .ace_entity.ace_other.ace_attribute-name {
   color: #999dd9;
@@ -316,7 +318,7 @@ border: 1px solid rgba(255, 255, 255, 0.25);
 }
 /* The hovered menu item */
 .rstudio-themes-flat.rstudio-themes-dark-menus .gwt-MenuItem.gwt-MenuItem-selected, .rstudio-themes-flat.rstudio-themes-dark-menus .subMenuIcon-selected, .rstudio-themes-flat.rstudio-themes-dark-menus .gwt-SuggestBoxPopup .item-selected {
-  background: linear-gradient(0deg, #E1ECF9 0%, #8CAACB 100%) !important;
+  background: var(--menu) !important;
  }
 .xtermInvertColor { 
  color: #272822;
