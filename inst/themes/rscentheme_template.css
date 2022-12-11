@@ -21,9 +21,9 @@
   --language-constant: #DDAE9B;
   --numeric-constant: #AAC1A4;
   --string: #C3BADB;
-  --regex: rgb(209, 105, 105);
   --keyword: #C2C4F6;
   --comment: #7EA284;
+  --variable: #D7E38C;
   --support-function: #bac9ef;
   --operator:  #FDF8C0;
   --paren-col0: #FBBFA5;
@@ -34,7 +34,7 @@
   --paren-col5: #EE6C9D;
   --paren-col6: #FDDBC8;
  
-  --variable: #D7E38C;
+  --regex: rgb(209, 105, 105);
   --type-declaration: #B7D0F0;
   --function-declaration: #C99696;
 
@@ -48,6 +48,7 @@
   --inline-code: var(--string);
   --markup-heading: #9c8aa4;
   --markup-list: #bbd797;
+  --meta-tag : #90766B;
 
   /* terminal */
   --terminal-background: #141414;
@@ -68,7 +69,7 @@
 
 }
 .ace_gutter { /* margin on the side */ 
-  background: var(---gutter-background);
+  background: var(--gutter-background);
   color: var(--gutter-foreground);
 }
 .ace_print-margin {
@@ -104,6 +105,10 @@
 .ace_support.ace_function {
  color: var(--support-function);
 } 
+.ace_identifier,
+.ace_variable {
+  color: var(--variable);
+}
 .ace_keyword.ace_operator {
    color: var(--operator);
 }  
@@ -197,10 +202,6 @@ border: 1px solid rgba(255, 255, 255, 0.25);
 .ace_fold {
   background-color: #999dd9;
   border-color: #F8F8F2;
-}
-.ace_identifier,
-.ace_variable {
-  color: #EFF4FB;
 }
 .ace_entity.ace_other.ace_attribute-name {
   color: #999dd9;
