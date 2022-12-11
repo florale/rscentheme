@@ -4,7 +4,7 @@
 \alias{hello_rscentheme}
 \title{Apply rscentheme theme}
 \usage{
-hello_rscentheme(name = c("rose", "iris", "silver", "woodsage"))
+hello_rscentheme(name = c("rose", "iris", "mountainwater", "woodsage"))
 }
 \value{
 nothing.

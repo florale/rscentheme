@@ -6,7 +6,6 @@
 #' @return nothing
 #'
 #' @importFrom rstudioapi addTheme applyTheme
-#' @importFrom 
 #' @export
 rscentheme <- function () {
   
@@ -18,20 +17,20 @@ rscentheme <- function () {
     rm_rscentheme()
     }
   
-  addTheme(fs::path_package(package = "rscentheme",
-                            "rscentheme_rose_of_no_man_land.rstheme"),
+  addTheme(fs::path_package(package = "rscentheme", 
+                            "themes", "rscentheme_rose_of_no_mans_land.rstheme"),
            force = TRUE)
   
-  addTheme(fs::path_package(package = "rscentheme",
-                            "rscentheme_iris_malikhan.rstheme"),
+  addTheme(fs::path_package(package = "rscentheme", 
+                            "themes", "rscentheme_iris_malikhan.rstheme"),
            force = TRUE)
   
-  addTheme(fs::path_package(package = "rscentheme",
-                            "rscentheme_silver_mountain_water.rstheme"),
+  addTheme(fs::path_package(package = "rscentheme", 
+                            "themes", "rscentheme_silver_mountain_water.rstheme"),
            force = TRUE)
   
-  addTheme(fs::path_package(package = "rscentheme",
-                            "rscentheme_wood_sage_sea_salt.rstheme"),
+  addTheme(fs::path_package(package = "rscentheme", 
+                            "themes", "rscentheme_wood_sage_sea_salt.rstheme"),
            force = TRUE)
   
 }
@@ -40,7 +39,7 @@ rscentheme <- function () {
 #'
 #' @return nothing.
 #' @export
-hello_rscentheme <- function (name = c("rose", "iris", "silver", "woodsage")) {
+hello_rscentheme <- function (name = c("rose", "iris", "mountainwater", "woodsage")) {
   
   ## check RStudio API available
   if(!rstudioapi::isAvailable()) stop("rscentheme must be installed from within RStudio.")
@@ -51,21 +50,23 @@ hello_rscentheme <- function (name = c("rose", "iris", "silver", "woodsage")) {
   }
   ## install and add
   if (name == "rose") {
-    addTheme(fs::path_package(package = "rscentheme",
-                              "rscentheme_rose_of_no_man_land.rstheme"),
+    addTheme(fs::path_package(package = "rscentheme", 
+                              "themes", "rscentheme_rose_of_no_mans_land.rstheme"),
              force = TRUE, apply = TRUE)
     
     } else if (name == "iris") {
-      addTheme(fs::path_package(package = "rscentheme",
-                                "rscentheme_iris_malikhan.rstheme"),
+      addTheme(fs::path_package(package = "rscentheme", 
+                                "themes", "rscentheme_iris_malikhan.rstheme"),
                force = TRUE, apply = TRUE)
-      } else if (name == "silver") {
-        addTheme(fs::path_package(package = "rscentheme",
-                                  "rscentheme_silver_mountain_water.rstheme"),
+      
+      } else if (name == "mountainwater") {
+        addTheme(fs::path_package(package = "rscentheme", 
+                                  "themes", "rscentheme_silver_mountain_water.rstheme"),
                  force = TRUE, apply = TRUE)
+        
         } else if (name == "woodsage") {
-          addTheme(fs::path_package(package = "rscentheme",
-                                    "rscentheme_wood_sage_sea_salt.rstheme"),
+          addTheme(fs::path_package(package = "rscentheme", 
+                                    "themes", "rscentheme_wood_sage_sea_salt.rstheme"),
                    force = TRUE, apply = TRUE)
   }
 }
