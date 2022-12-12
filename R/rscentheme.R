@@ -39,7 +39,7 @@ rscentheme <- function () {
 #'
 #' @return nothing.
 #' @export
-hello_rscentheme <- function (name = c("rose", "iris", "mountainwater", "woodsage")) {
+scented_theme <- function (name = c("rose", "iris", "mountainwater", "woodsage")) {
   
   ## check RStudio API available
   if(!rstudioapi::isAvailable()) stop("rscentheme must be installed from within RStudio.")
@@ -76,7 +76,7 @@ hello_rscentheme <- function (name = c("rose", "iris", "mountainwater", "woodsag
 #'
 #' @return nothing.
 #' @export
-bye_rscentheme <- function(){
+unscented_theme <- function() {
   
   installed_rscentheme_themes <- grep(x = purrr::map_depth(.x = rstudioapi::getThemes(),
                                                            .depth = 1L,
