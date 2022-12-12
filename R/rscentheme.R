@@ -32,6 +32,9 @@ rscentheme <- function () {
   addTheme(fs::path_package(package = "rscentheme", 
                             "themes", "rscentheme_wood_sage_sea_salt.rstheme"),
            force = TRUE)
+  addTheme(fs::path_package(package = "rscentheme", 
+                            "themes", "rscentheme_br540.rstheme"),
+           force = TRUE)
   
 }
 
@@ -39,7 +42,11 @@ rscentheme <- function () {
 #'
 #' @return nothing.
 #' @export
-scented_theme <- function (name = c("rose", "iris", "mountainwater", "woodsea")) {
+scented_theme <- function (name = c("rose", 
+                                    "iris", 
+                                    "mountainwater", 
+                                    "woodsea",
+                                    "br540")) {
   
   ## check RStudio API available
   if(!rstudioapi::isAvailable()) stop("rscentheme must be installed from within RStudio.")
@@ -68,7 +75,11 @@ scented_theme <- function (name = c("rose", "iris", "mountainwater", "woodsea"))
           addTheme(fs::path_package(package = "rscentheme", 
                                     "themes", "rscentheme_wood_sage_sea_salt.rstheme"),
                    force = TRUE, apply = TRUE)
-  }
+          } else if (name == "br540") {
+            addTheme(fs::path_package(package = "rscentheme", 
+                                      "themes", "rscentheme_br540.rstheme"),
+                     force = TRUE, apply = TRUE)
+          }
 }
 
 
@@ -81,7 +92,7 @@ unscented_theme <- function() {
   installed_rscentheme_themes <- grep(x = purrr::map_depth(.x = rstudioapi::getThemes(),
                                                            .depth = 1L,
                                                            .f = purrr::pluck("name")),
-                                      pattern = "byF",
+                                      pattern = "rscentheme",
                                       value = TRUE)
   
   for (theme in installed_rscentheme_themes) {

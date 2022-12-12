@@ -4,7 +4,7 @@
 \alias{scented_theme}
 \title{Apply rscentheme theme}
 \usage{
-scented_theme(name = c("rose", "iris", "mountainwater", "woodsage"))
+scented_theme(name = c("rose", "iris", "mountainwater", "woodsea", "br540"))
 }
 \value{
 nothing.
