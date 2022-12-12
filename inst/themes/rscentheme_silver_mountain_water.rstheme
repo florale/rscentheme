@@ -57,7 +57,7 @@
   /* misc */
   --breakpoint: #C9D1C2;
   --xtcol1: #FFE9A4;
-  --xtcol2: #BFC0EE;
+  --xtcol2: #7EA284;
   --xtcol3: #835f53;
   --xtcol4: #b5d5b0; 
   --xtcol5: #E30B5C;

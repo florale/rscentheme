@@ -39,7 +39,7 @@
   --regex: rgb(209, 105, 105);
 
   /* console */
-  --console-error: #869280; /* cliffside */
+  --console-error: #E9C9CE; /* cliffside */
   --console-keyword: #8F6F64;
   --console-language-constant: #869280;
 
@@ -57,11 +57,11 @@
 
   /* misc */
   --breakpoint: #D1EAFF;
-  --xtcol1: #FFE9A4;
-  --xtcol2: #D0748B;
+  --xtcol1: #FDDBC8;
+  --xtcol2: #CEA3AC;
   --xtcol3: #944C4C;
   --xtcol4: #7EA284; 
-  --xtcol5: #E30B5C;
+  --xtcol5: #B0CFF7;
   --xtcol6: #b0cca6;
   --xtcol7: #d3d7cf;
   --xtcol8: #555753;
