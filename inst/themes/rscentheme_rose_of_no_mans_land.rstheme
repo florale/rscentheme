@@ -102,9 +102,9 @@
   color: var(--gutter-foreground);
 }
 .ace_print-margin {
-  width: 1px; 
-  background: #e8e8e8;
-}  
+  width: 2px;
+  box-shadow: 1px 0 0 0 rgb(90, 90, 90) inset;
+}
 .ace_editor, .rstudio-themes-flat.ace_editor_theme .profvis-flamegraph, .rstudio-themes-flat.ace_editor_theme, .rstudio-themes-flat .ace_editor_theme {
   background-color: var(--editor-background); /* background for editor */
   color: var(--editor-foreground); /* text for editor */
