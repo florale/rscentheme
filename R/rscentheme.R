@@ -39,7 +39,7 @@ rscentheme <- function () {
 #'
 #' @return nothing.
 #' @export
-scented_theme <- function (name = c("rose", "iris", "mountainwater", "woodsage")) {
+scented_theme <- function (name = c("rose", "iris", "mountainwater", "woodsea")) {
   
   ## check RStudio API available
   if(!rstudioapi::isAvailable()) stop("rscentheme must be installed from within RStudio.")
@@ -64,7 +64,7 @@ scented_theme <- function (name = c("rose", "iris", "mountainwater", "woodsage")
                                   "themes", "rscentheme_silver_mountain_water.rstheme"),
                  force = TRUE, apply = TRUE)
         
-        } else if (name == "woodsage") {
+        } else if (name == "woodsea") {
           addTheme(fs::path_package(package = "rscentheme", 
                                     "themes", "rscentheme_wood_sage_sea_salt.rstheme"),
                    force = TRUE, apply = TRUE)
