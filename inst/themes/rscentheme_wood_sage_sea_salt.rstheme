@@ -4,9 +4,9 @@
 :root {
   /* editor */
   --editor-background-color: 30, 30, 30;
-  --editor-background: #000000;
+  --editor-background: #141414;
   --editor-foreground: #f3f0e7;
-  --cursor : #B7D0F0;
+  --cursor : #B5CAC9;
 
   --separator: rgb(68, 68, 68);
   --toolbar: rgb(37, 37, 38);
@@ -18,20 +18,20 @@
   --gutter-foreground: #483B35;
 
   /* syntax */
-  --language-constant: #DB9B88;
-  --numeric-constant: #7ba1ce;
-  --string: #CDD7E6; 
+  --language-constant: #FDE8D1; /* sun screen */
+  --numeric-constant: #f9e6a6; /* lemon */
+  --string: #97acc3; /* dark sky blue */
   --keyword: #9B8479;
-  --comment: #4c698db5;
-  --variable: #F5F1E6;
-  --support-function: #8CAACB; 
-  --operator:  #cdbab0;
-  --paren-col0: #FDE8D1;
-  --paren-col1: #FDF8C0;
-  --paren-col2: #BFC0EE;
-  --paren-col3: #B2CED3;
-  --paren-col4: #E0C4CA;
-  --paren-col5: #B0CCA6;
+  --comment: #53657ae6; /* deep ocean */
+  --variable: #f7f2e6; /* salt */
+  --support-function: #D0DEEC; /* soft cloud blue */
+  --operator:  #D1B9AC;
+  --paren-col0: #EFD2BD;
+  --paren-col1: #EBB98D;  /* sun */
+  --paren-col2: #C7DCCD;
+  --paren-col3: #FFE9A4;
+  --paren-col4: #718FAD;
+  --paren-col5: #B7D0F0;
   --paren-col6: #FDDBC8;
  
   --type-declaration: #A2C2EC;
@@ -39,15 +39,15 @@
   --regex: rgb(209, 105, 105);
 
   /* console */
-  --console-error: #7E8D8C; 
+  --console-error: #869280; /* cliffside */
   --console-keyword: #8F6F64;
-  --console-language-constant: #7E8D8C;
+  --console-language-constant: #869280;
 
   /* markdown */
   --heading: #F1DDCF;
   --inline-code: var(--string);
   --markup-heading: #C99696;
-  --markup-list: #bbd797;
+  --markup-list: #b0cca6;
   --meta-tag: #90766B;
 
   /* terminal */
@@ -62,14 +62,14 @@
   --xtcol3: #944C4C;
   --xtcol4: #7EA284; 
   --xtcol5: #E30B5C;
-  --xtcol6: #D0748B;
+  --xtcol6: #b0cca6;
   --xtcol7: #d3d7cf;
   --xtcol8: #555753;
   --xtcol9: #DB9B88;
   --xtcol10: #8ae234;
 
   /* buttons */
-  --button: #455859;
+  --button: #4B5647;
 
   /* fonts */
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -79,7 +79,7 @@
   --bg: #2c2c2c;
   --font-fg: #ffffff;
   --divider-bg: #2c2c2c;
-  --button-bg: #455859;
+  --button-bg: #4B5647;
   --button-bg-selected: #2c2c2c;
   --border: #0a0a0a;
   --input-bg: #141414;
@@ -92,7 +92,7 @@
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: #282828;
   --scrollbar-bg-hover: #333333;
-  --scrollbar-bg-active: #455859;
+  --scrollbar-bg-active: #4B5647;
   --scrollbar-border: solid 2px #282828;
   --autocomplete-bg: #222222;
   --autocomplete-fg: #dddddd;
