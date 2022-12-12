@@ -4,7 +4,7 @@
 :root {
   /* editor */
   --editor-background-color: 30, 30, 30;
-  --editor-background: #000000;
+  --editor-background: #141414;
   --editor-foreground: #F9F3F0;
   --cursor : #F7D8C9;
 

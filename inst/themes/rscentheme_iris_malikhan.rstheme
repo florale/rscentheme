@@ -4,7 +4,7 @@
 :root {
   /* editor */
   --editor-background-color: 30, 30, 30;
-  --editor-background: #000000;
+  --editor-background: #141414;
   --editor-foreground: #EFF4FB;
   --cursor : #C3BADB;
 
@@ -28,7 +28,7 @@
   --operator:  #FDF8C0;
   --paren-col0: #A69188; 
   --paren-col1: #D2EACE;
-  --paren-col2: #DDAE9B;
+  --paren-col2: #D2EACE;
   --paren-col3: #BFC0EE;
   --paren-col4: #B0CCA6;
   --paren-col5: #9D8068;
