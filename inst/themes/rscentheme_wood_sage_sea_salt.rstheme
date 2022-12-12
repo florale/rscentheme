@@ -44,9 +44,9 @@
   --console-language-constant: #869280;
 
   /* markdown */
-  --heading: #F1DDCF;
+  --heading: #f1e2cf;
   --inline-code: var(--string);
-  --markup-heading: #C99696;
+  --markup-heading: #4E7793;
   --markup-list: #b0cca6;
   --meta-tag: #90766B;
 
