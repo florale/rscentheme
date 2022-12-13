@@ -80,7 +80,7 @@
   --divider-bg: #2c2c2c;
   --button-bg: #2E5090;
   --button-bg-selected: #2c2c2c;
-  --border: #0a0a0a;
+  --border: var(--button-bg-selected);
   --input-bg: #141414;
   --active-tab: #3b3b3b;
   --inactive-tab: #303030;
@@ -631,8 +631,8 @@ body.rstudio-themes-flat .rstudio-themes-dark-grey,
 .rstudio-themes-dark
   .gwt-TabLayoutPanelTab.gwt-TabLayoutPanelTab-selected
   .rstheme_tabLayoutCenter {
-  background-color: var(--tab) !important;
-  color: white;
+  background-color: var(--string) !important;
+  color: black;
   border-color: var(--border) !important;
 }
 
@@ -724,12 +724,14 @@ input[type="text"] {
 
 #rstudio_find_replace_bar :-webkit-any(button) > table:first-child {
   background-color: var(--button-bg) !important;
+  border: solid 1px var(--button);
+
 }
 
 /* find in files button borders */
 .rstudio-themes-flat .rstudio-themes-dark .GGBOEFPDCX,
 .rstudio-themes-flat .rstudio-themes-dark .GGBOEFPDPW {
-  border: solid 1px var(--border);
+  border: solid 1px var(--button);
 }
 
 /* find in files button backgrounds */
@@ -737,11 +739,15 @@ input[type="text"] {
 .rstudio-themes-flat .rstudio-themes-dark .GGBOEFPDOW,
 .rstudio-themes-flat .rstudio-themes-dark .GGBOEFPDDX {
   background: var(--button-bg-selected);
+  border: solid 1px var(--button);
+
 }
 
 .rstudio-themes-flat .rstudio-themes-dark-grey .GGBOEFPDPW .GGBOEFPDDX,
 .rstudio-themes-flat .rstudio-themes-dark-grey .GGBOEFPDCX .GGBOEFPDOW {
   background: var(--button-bg);
+  border: solid 1px var(--button);
+
 }
 
 /* Check box options in find and replace bar */
@@ -823,7 +829,15 @@ input[type="text"] {
   border-color: black;
 }
 
-
+/* R Studio 
+.rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
+  box-shadow: 2px 0 0 var(--comment) inset;
+  border-radius: 0 !important;
+  border-top: solid 1px #dcd3c6 !important;
+  border-right: solid 1px #dcd3c6 !important;
+  border-left: solid 1px #dcd3c6 !important;
+  margin-left: 0 !important;
+} */
 
 
 
