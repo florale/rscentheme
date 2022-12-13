@@ -46,7 +46,10 @@ scented_theme <- function (name = c("rose",
                                     "iris", 
                                     "mountainwater", 
                                     "woodsea",
-                                    "br540")) {
+                                    "br540",
+                                    "woodsea_light",
+                                    "blanche",
+                                    "pluriel")) {
   
   ## check RStudio API available
   if(!rstudioapi::isAvailable()) stop("rscentheme must be installed from within RStudio.")
@@ -78,6 +81,18 @@ scented_theme <- function (name = c("rose",
           } else if (name == "br540") {
             addTheme(fs::path_package(package = "rscentheme", 
                                       "themes", "rscentheme_br540.rstheme"),
+                     force = TRUE, apply = TRUE)
+          } else if (name == "woodsea_light") {
+            addTheme(fs::path_package(package = "rscentheme",
+                                      "themes", "rscentheme_wood_sage_sea_salt_light.rstheme"),
+                     force = TRUE, apply = TRUE)
+          } else if (name == "blanche") {
+              addTheme(fs::path_package(package = "rscentheme",
+                                        "themes", "rscentheme_blanche.rstheme"),
+                       force = TRUE, apply = TRUE)
+          } else if (name == "pluriel") {
+            addTheme(fs::path_package(package = "rscentheme",
+                                      "themes", "rscentheme_pluriel.rstheme"),
                      force = TRUE, apply = TRUE)
           }
 }
