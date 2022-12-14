@@ -5,17 +5,13 @@
 
 # `rscentheme`
 **R** **S**tudio S**cent**ed T**heme**s
-is an package with themes for R Studio that are inspired by perfumes. 
-Each theme is my impression of a perfume, including their notes, their colors, their vibes, and their story. 
+is an package with themes for R Studio inspired by perfumes. 
 Below you will find instructions on how to install and apply the themes to your R Studio. 
 
 # Installation
 To install `rscentheme`, type
 
 ```r
-if (!requireNamespace("remotes")) {
-  install.packages("remotes")
-}
 remotes::install_github("florale/rscentheme")
 ```
 
@@ -23,10 +19,15 @@ remotes::install_github("florale/rscentheme")
 `rscentheme` currently offers **5** themes in Dark mode:
 
 - `rose` inspired by Rose of No Man's Land by Byredo. 
-- `iris` inspired by Iris Malikhân by Maison Crivelli.
 - `mountainwater` inspired by Silver Mountain Water by Creed.
 - `woodsea` inspired by Wood Sage and Sea Salt by Jo Malone. 
 - `br540` inspired by Baccarat Rouge 540 by Maison Francis Kurkdjian. 
+- `iris` inspired by Iris Malikhân by Maison Crivelli.
+
+And **2** themes in Light mode:
+
+- `blanche` inspired by Blanche by Byredo. 
+- `pluriel` inspired by Feminin and Masculin Pluriel by Maison Francis Kurkdjian.
 
 You can install all themes using the following code
 
@@ -34,37 +35,27 @@ You can install all themes using the following code
 rscentheme()
 ```
 
-To apply or switch a theme, run `hello_rscentheme("theme_name")`.
-
-For Rose of No Man's Land, 
+To install, apply or switch a theme, run
 ```r
-scented_theme("rose")
+scented_theme("theme_name")
 ```
 
-For Iris Malikhân, 
-```r
-scented_theme("iris")
-```
-
-For Silver Mountain Water, 
-```r
-scented_theme("mountainwater")
-```
-
-For Wood Sage and Sea Salt, 
-```r
-scented_theme("woodsea")
-```
-
-For Wood Sage and Sea Salt, 
-```r
-scented_theme("br540")
-```
-
-Lastly, you can uninstall any `rscentheme` them by running 
+Lastly, you can uninstall any `rscentheme` theme by running 
 ```r
 unscented_theme()
 ```
+
+# Themes
+## Dark
+### Rose of No Man's Land `rose`
+### Silver Mountain Water `mountainwater`
+### Wood Sage and Sea Salt Dark `woodsea`
+### Baccarat Rouge 540 `br540`
+### Iris Malikhân `iris`
+
+## Light
+### Blanche `blanche`
+### Pluriel `pluriel`
 
 # Recommended RStudio settings
 

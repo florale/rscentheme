@@ -58,6 +58,20 @@ scented_theme <- function (name = c("rose",
   if(rscentheme_installed()){
     rm_rscentheme()
   }
+  
+  ## check name
+  if(isTRUE(missing(name))) stop("Theme name is required but missing")
+  
+  if (isFALSE(name %in% scent_palette)) {
+    stop(paste(sprintf(
+      "Couldn't find %s scented theme", name), 
+      "\n",
+      paste(
+        "It should be one of the following: ",
+        paste0(" ", scent_palette, collapse = ","),
+        paste0(" ", emo::ji("smiling_face")),
+        sep = "\n")))
+  }
   ## install and add
   if (name == "rose") {
     addTheme(fs::path_package(package = "rscentheme", 
@@ -82,18 +96,14 @@ scented_theme <- function (name = c("rose",
             addTheme(fs::path_package(package = "rscentheme", 
                                       "themes", "rscentheme_br540.rstheme"),
                      force = TRUE, apply = TRUE)
-          } else if (name == "woodsea_light") {
-            addTheme(fs::path_package(package = "rscentheme",
-                                      "themes", "rscentheme_wood_sage_sea_salt_light.rstheme"),
-                     force = TRUE, apply = TRUE)
-          } else if (name == "blanche") {
+            } else if (name == "blanche") {
               addTheme(fs::path_package(package = "rscentheme",
                                         "themes", "rscentheme_blanche.rstheme"),
                        force = TRUE, apply = TRUE)
-          } else if (name == "pluriel") {
-            addTheme(fs::path_package(package = "rscentheme",
-                                      "themes", "rscentheme_pluriel.rstheme"),
-                     force = TRUE, apply = TRUE)
+              } else if (name == "pluriel") {
+                addTheme(fs::path_package(package = "rscentheme",
+                                          "themes", "rscentheme_pluriel.rstheme"),
+                         force = TRUE, apply = TRUE)
           }
 }
 
