@@ -6,7 +6,7 @@
   --editor-background-color: 30, 30, 30;
   --editor-background: #141414;
   --editor-foreground: #ECEBE5;
-  --cursor : #ad97a3;
+  --cursor : #d4d3d5;
 
   --separator: rgb(68, 68, 68);
   --toolbar: rgb(37, 37, 38);
@@ -37,6 +37,9 @@
   --type-declaration: #B7D0F0;
   --function-declaration: #C99696;
   --regex: rgb(209, 105, 105);
+
+  --popup-bg: #586653;
+  --popup-fg: white;
 
   /* console */
   --console-error: #8F6F64;
@@ -237,11 +240,11 @@ border: 1px solid rgba(255, 255, 255, 0.25);
 }
  /* not sure what these are for */
  .ace_gutter-active-line {
-  background-color: #9c8aa4;
+  background-color: #f5ebed;
  }
  .ace_indent-guide	 {
-  background-color: #9c8aa4;
- }  
+  background-color: transparent;
+ } 
  .ace_entity.ace_name.ace_tag, .ace_entity.ace_other.ace_attribute-name, .ace_meta.ace_tag, .ace_string.ace_regexp, .ace_variable {
    color: var(--meta-tag);
  }
@@ -831,7 +834,7 @@ input[type="text"] {
 
 /* R Studio */
 .rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
-  box-shadow: 2px 0 0 var(--comment) inset;
+  box-shadow: 2px 0 0 #f0f0f0 inset;
   border-radius: 0 !important;
   border-top: solid 1px #dcd3c6 !important;
   border-right: solid 1px #dcd3c6 !important;
@@ -839,7 +842,14 @@ input[type="text"] {
   margin-left: 0 !important;
 }
 
-
+/* popup */
+.rstudio-themes-flat .gwt-PopupPanel .popupContent table {
+  background: var(--popup-bg);
+  border: 0;
+}
+.rstudio-themes-flat .gwt-PopupPanel .popupContent table .gwt-Label {
+  color: var(--popup-fg);
+}
 
 
 

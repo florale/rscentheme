@@ -38,6 +38,9 @@
   --function-declaration: #C99696;
   --regex: rgb(209, 105, 105);
 
+  --popup-bg: var(--support-function);
+  --popup-fg: black;
+
   /* console */
   --console-error: #E9C9CE;
   --console-keyword: #8C4B51;
@@ -52,8 +55,7 @@
 
   /* terminal */
   --terminal-background: #141414;
-  --terminal-foreground: #E1ECF9
-  ;
+  --terminal-foreground: #E1ECF9;
 
   /* misc */
   --breakpoint: #D1EAFF;
@@ -79,7 +81,7 @@
   --bg: #2c2c2c;
   --font-fg: #ffffff;
   --divider-bg: #2c2c2c;
-  --button-bg: #613821;
+  --button-bg: var(--button);
   --button-bg-selected: #2c2c2c;
   --border: var(--button-bg-selected);
   --input-bg: #141414;
@@ -92,7 +94,7 @@
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: #282828;
   --scrollbar-bg-hover: #333333;
-  --scrollbar-bg-active: #613821;
+  --scrollbar-bg-active: var(--button);
   --scrollbar-border: solid 2px #282828;
   --autocomplete-bg: #222222;
   --autocomplete-fg: #dddddd;
@@ -236,12 +238,11 @@ border: 1px solid rgba(255, 255, 255, 0.25);
 #rstudio_console_output .ace_constant.ace_language {
   color: var(--console-language-constant);
 }
- /* not sure what these are for */
  .ace_gutter-active-line {
-  background-color: #9c8aa4;
+  background-color: #f5ebed;
  }
  .ace_indent-guide	 {
-  background-color: #9c8aa4;
+  background-color: transparent;
  }  
  .ace_entity.ace_name.ace_tag, .ace_entity.ace_other.ace_attribute-name, .ace_meta.ace_tag, .ace_string.ace_regexp, .ace_variable {
    color: var(--meta-tag);
@@ -840,7 +841,14 @@ input[type="text"] {
   margin-left: 0 !important;
 } */
 
-
+/* popup */
+.rstudio-themes-flat .gwt-PopupPanel .popupContent table {
+  background: var(--popup-bg);
+  border: 0;
+}
+.rstudio-themes-flat .gwt-PopupPanel .popupContent table .gwt-Label {
+  color: var(--popup-fg);
+}
 
 
 
