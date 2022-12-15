@@ -5,7 +5,7 @@
 #' 
 #' @return nothing
 #'
-#' @importFrom rstudioapi addTheme applyTheme
+#' @importFrom rstudioapi addTheme
 #' @export
 rscentheme <- function () {
   
@@ -17,25 +17,15 @@ rscentheme <- function () {
     rm_rscentheme()
     }
   
-  addTheme(fs::path_package(package = "rscentheme", 
-                            "themes", "rscentheme_rose_of_no_mans_land.rstheme"),
-           force = TRUE)
-  
-  addTheme(fs::path_package(package = "rscentheme", 
-                            "themes", "rscentheme_iris_malikhan.rstheme"),
-           force = TRUE)
-  
-  addTheme(fs::path_package(package = "rscentheme", 
-                            "themes", "rscentheme_silver_mountain_water.rstheme"),
-           force = TRUE)
-  
-  addTheme(fs::path_package(package = "rscentheme", 
-                            "themes", "rscentheme_wood_sage_sea_salt.rstheme"),
-           force = TRUE)
-  addTheme(fs::path_package(package = "rscentheme", 
-                            "themes", "rscentheme_br540.rstheme"),
-           force = TRUE)
-  
+  # add
+  suppressWarnings(
+    for(name in scent_palette) {
+      addTheme(fs::path_package(package = "rscentheme",
+                                "themes", 
+                                paste0("rscentheme_", name, ".rstheme")),
+               force = TRUE)
+      })
+  message(paste0("DONE "), emo::ji("wind_face"))
 }
 
 #' Apply rscentheme theme
@@ -49,7 +39,8 @@ scented_theme <- function (name = c("rose",
                                     "br540",
                                     "woodsea_light",
                                     "blanche",
-                                    "pluriel")) {
+                                    "pluriel",
+                                    "delina")) {
   
   ## check RStudio API available
   if(!rstudioapi::isAvailable()) stop("rscentheme must be installed from within RStudio.")
@@ -73,41 +64,11 @@ scented_theme <- function (name = c("rose",
         sep = "\n")))
   }
   ## install and add
-  if (name == "rose") {
-    addTheme(fs::path_package(package = "rscentheme", 
-                              "themes", "rscentheme_rose_of_no_mans_land.rstheme"),
-             force = TRUE, apply = TRUE)
-    
-    } else if (name == "iris") {
-      addTheme(fs::path_package(package = "rscentheme", 
-                                "themes", "rscentheme_iris_malikhan.rstheme"),
-               force = TRUE, apply = TRUE)
-      
-      } else if (name == "mountainwater") {
-        addTheme(fs::path_package(package = "rscentheme", 
-                                  "themes", "rscentheme_silver_mountain_water.rstheme"),
-                 force = TRUE, apply = TRUE)
-        
-        } else if (name == "woodsea") {
-          addTheme(fs::path_package(package = "rscentheme", 
-                                    "themes", "rscentheme_wood_sage_sea_salt.rstheme"),
-                   force = TRUE, apply = TRUE)
-          } else if (name == "br540") {
-            addTheme(fs::path_package(package = "rscentheme", 
-                                      "themes", "rscentheme_br540.rstheme"),
-                     force = TRUE, apply = TRUE)
-            } else if (name == "blanche") {
-              addTheme(fs::path_package(package = "rscentheme",
-                                        "themes", "rscentheme_blanche.rstheme"),
-                       force = TRUE, apply = TRUE)
-              } else if (name == "pluriel") {
-                addTheme(fs::path_package(package = "rscentheme",
-                                          "themes", "rscentheme_pluriel.rstheme"),
-                         force = TRUE, apply = TRUE)
-          }
+  addTheme(fs::path_package(package = "rscentheme",
+                            "themes", 
+                            paste0("rscentheme_", name, ".rstheme")),
+           force = TRUE, apply = TRUE)
 }
-
-
 #' Uninstall rscentheme theme
 #'
 #' @return nothing.

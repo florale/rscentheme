@@ -18,16 +18,17 @@ remotes::install_github("florale/rscentheme")
 # Usage
 `rscentheme` currently offers **5** themes in Dark mode:
 
-- `rose` inspired by Rose of No Man's Land by Byredo. 
-- `mountainwater` inspired by Silver Mountain Water by Creed.
-- `woodsea` inspired by Wood Sage and Sea Salt by Jo Malone. 
-- `br540` inspired by Baccarat Rouge 540 by Maison Francis Kurkdjian. 
-- `iris` inspired by Iris Malikhân by Maison Crivelli.
+- `rose` inspired by Rose of No Man's Land Byredo.
+- `mountainwater` inspired by Silver Mountain Water Creed.
+- `woodsea` inspired by Wood Sage and Sea Salt Jo Malone.
+- `br540` inspired by Baccarat Rouge 540 Maison Francis Kurkdjian.
+- `iris` inspired by Iris Malikhân Maison Crivelli.
 
-And **2** themes in Light mode:
+And **3** themes in Light mode:
 
-- `blanche` inspired by Blanche by Byredo. 
-- `pluriel` inspired by Feminin and Masculin Pluriel by Maison Francis Kurkdjian.
+- `blanche` inspired by Blanche Byredo.
+- `pluriel` inspired by Feminin and Masculin Pluriel Maison Francis Kurkdjian.
+- `delina` inspired by Delina Parfums de Marly.
 
 You can install all themes using the following code
 
@@ -60,7 +61,7 @@ unscented_theme()
 # Recommended RStudio settings
 
 The following settings are recommended:
-
+- <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Highlight selected word**
 - <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Highlight selected line**
 - <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Highlight R function calls**
 - <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Rainbow parentheses**

@@ -9,7 +9,8 @@ scent_palette <- c("rose",
                    "woodsea",
                    "br540",
                    "blanche",
-                   "pluriel")
+                   "pluriel",
+                   "delina")
 
 host_os_is_mac <- function() {
   Sys.info()["sysname"] == "Darwin"
@@ -25,7 +26,8 @@ rscentheme_installed <- function() {
   !is.null(rstudioapi::getThemes()$`iris malikhân - rscentheme`)  || 
   !is.null(rstudioapi::getThemes()$`wood sage and sea salt - rscentheme`) ||
   !is.null(rstudioapi::getThemes()$`br540 - rscentheme`) ||
-  !is.null(rstudioapi::getThemes()$`silver mountain water - rscentheme`)||
-  !is.null(rstudioapi::getThemes()$`blanche - rscentheme`)||
-  !is.null(rstudioapi::getThemes()$`pluriel - rscentheme`)
+  !is.null(rstudioapi::getThemes()$`silver mountain water - rscentheme`)  ||
+  !is.null(rstudioapi::getThemes()$`blanche - rscentheme`) ||
+  !is.null(rstudioapi::getThemes()$`pluriel - rscentheme`) ||
+  !is.null(rstudioapi::getThemes()$`delina - rscentheme`)
 }
