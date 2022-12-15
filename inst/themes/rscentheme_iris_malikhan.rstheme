@@ -208,6 +208,7 @@ border-radius: 2px;
 } 
 .ace_marker-layer .ace_active-line {
   outline: 1px solid rgb(40, 40, 40);
+  background: rgb(40, 40, 40);
 }
 .ace_marker-layer .ace_step {
  background: rgb(102, 0, 0);
