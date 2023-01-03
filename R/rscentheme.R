@@ -60,7 +60,7 @@ scented_theme <- function (name = c("rose",
       paste(
         "It should be one of the following: ",
         paste0(" ", scent_palette, collapse = ","),
-        paste0(" ", emo::ji("smiling_face")),
+        paste0(" ", emo::ji("art")),
         sep = "\n")))
   }
   ## install and add
