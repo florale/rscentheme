@@ -58,17 +58,18 @@
   --terminal-foreground: #E1ECF9;
 
   /* misc */
-  --breakpoint: #D1EAFF;
-  --xtcol1: #FDDBC8;
-  --xtcol2: #CEA3AC;
+  --breakpoint: #909f61;
+  --xtcol1: #FBE1B1;
+  --xtcol2: #8C4B51;
   --xtcol3: #DDAE9B;
   --xtcol4: #7EA284; 
-  --xtcol5: #B0CFF7;
+  --xtcol5: #90766B;
   --xtcol6: #b0cca6;
   --xtcol7: #d3d7cf;
   --xtcol8: #555753;
   --xtcol9: #DB9B88;
   --xtcol10: #8ae234;
+  --xtcol214: #FFE4A8;
 
   /* buttons */
   --button: #613821;
@@ -2167,10 +2168,10 @@ input[type="text"] {
   background-color: #ff87ff;
 }
 .xtermColor214 {
-  color: #ffaf00 !important;
+  color: var(--xtcol214) !important;
 }
 .xtermBgColor214 {
-  background-color: #ffaf00;
+  background-color: var(--xtcol214);
 }
 .xtermColor215 {
   color: #ffaf5f !important;
