@@ -22,9 +22,9 @@
   --numeric-constant: #A8C5A0;
   --string: #C3BADB;
   --keyword: #91A0D6; 
-  --comment: #7EA284; 
+  --comment: #E4E0F8; 
   --variable: #F4EFEA;
-  --support-function: #E4E0F8;
+  --support-function: #7EA284;
   --operator:  #FDF8C0;
   --paren-col0: #A69188; 
   --paren-col1: #D2EACE;
@@ -69,6 +69,7 @@
    --xtcol8: #555753;
    --xtcol9: #ef2929;
    --xtcol10: #8ae234;
+   --xtcol214: #6D79A3;
 
   /* buttons */
   --button: #706A84;
@@ -204,11 +205,11 @@
 border-radius: 2px;
 }  
 .ace_marker-layer .ace_selection {
-  background-color: #3a3d41;
+  background-color: #5c6168;
 } 
 .ace_marker-layer .ace_active-line {
   outline: 1px solid rgb(40, 40, 40);
-  background: rgb(40, 40, 40);
+  background: #5c6168;
 }
 .ace_marker-layer .ace_step {
  background: rgb(102, 0, 0);
@@ -218,7 +219,7 @@ margin: -1px 0 0 -1px;
 border: 1px solid rgba(255, 255, 255, 0.25);
 }  
 .ace_marker-layer .ace_selected-word {
- border: 1px solid rgba(255, 236, 221, 0.2);
+ border: 1px solid rgba(255, 236, 221, 0.5);
 } 
 .ace_marker-layer .ace_active_debug_line {
   position: absolute;
@@ -2167,10 +2168,10 @@ input[type="text"] {
   background-color: #ff87ff;
 }
 .xtermColor214 {
-  color: #ffaf00 !important;
+  color: var(--xtcol214) !important;
 }
 .xtermBgColor214 {
-  background-color: #ffaf00;
+  background-color: var(--xtcol214);
 }
 .xtermColor215 {
   color: #ffaf5f !important;
