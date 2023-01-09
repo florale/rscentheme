@@ -46,7 +46,7 @@ Lastly, you can uninstall any `rscentheme` theme by running
 unscented_theme()
 ```
 
-# Themes
+# Themes (media TBA)
 ## Dark
 ### Rose of No Man's Land `rose`
 ### Silver Mountain Water `mountainwater`
@@ -54,7 +54,7 @@ unscented_theme()
 ### Baccarat Rouge 540 `br540`
 ### Iris Malikhân `iris`
 
-## Light
+## Light 
 ### Blanche `blanche`
 ### Pluriel `pluriel`
 
@@ -65,3 +65,6 @@ The following settings are recommended:
 - <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Highlight selected line**
 - <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Highlight R function calls**
 - <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Rainbow parentheses**
+
+# Supported OS
+`rscentheme` has only been tested on MAC OS. Feedback from other systems is welcome.
