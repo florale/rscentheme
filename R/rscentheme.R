@@ -1,6 +1,5 @@
-#' @title Install and apply rscentheme theme
+#' Install and apply rscentheme theme
 #'
-#' @description
 #' @param name A character name of the theme to be installed and applied
 #' 
 #' @return nothing

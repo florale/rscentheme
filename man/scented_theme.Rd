@@ -6,7 +6,7 @@
 \usage{
 scented_theme(
   name = c("rose", "iris", "mountainwater", "woodsea", "br540", "woodsea_light",
-    "blanche", "pluriel")
+    "blanche", "pluriel", "delina")
 )
 }
 \value{

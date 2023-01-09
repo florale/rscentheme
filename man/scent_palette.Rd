@@ -5,7 +5,7 @@
 \alias{scent_palette}
 \title{Complete list of palettes}
 \format{
-An object of class \code{character} of length 7.
+An object of class \code{character} of length 8.
 }
 \usage{
 scent_palette
