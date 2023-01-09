@@ -63,12 +63,13 @@
   --xtcol2: #7EA284;
   --xtcol3: #FAD899;
   --xtcol4: #b5d5b0; 
-  --xtcol5: #E30B5C;
+  --xtcol5: #90766B;
   --xtcol6: #7EA284;
   --xtcol7: #d3d7cf;
   --xtcol8: #555753;
   --xtcol9: #DB9B88;
   --xtcol10: #8ae234;
+  --xtcol214: #dfb595;
 
   /* buttons */
   --button: #324434;
@@ -204,11 +205,11 @@
 border-radius: 2px;
 }  
 .ace_marker-layer .ace_selection {
-  background-color: #3a3d41;
+  background-color: #5c6168;
 } 
 .ace_marker-layer .ace_active-line {
   outline: 1px solid rgb(40, 40, 40);
-  background: rgb(40, 40, 40);
+  background: rgb(92, 97, 104, 0.5);
 }
 .ace_marker-layer .ace_step {
  background: rgb(102, 0, 0);
@@ -218,7 +219,7 @@ margin: -1px 0 0 -1px;
 border: 1px solid rgba(255, 255, 255, 0.25);
 }  
 .ace_marker-layer .ace_selected-word {
- border: 1px solid rgba(255, 236, 221, 0.2);
+ border: 1px solid rgba(255, 236, 221, 0.5);
 } 
 .ace_marker-layer .ace_active_debug_line {
   position: absolute;
@@ -2168,10 +2169,10 @@ input[type="text"] {
   background-color: #ff87ff;
 }
 .xtermColor214 {
-  color: #ffaf00 !important;
+  color: var(--xtcol214) !important;
 }
 .xtermBgColor214 {
-  background-color: #ffaf00;
+  background-color: var(--xtcol214);
 }
 .xtermColor215 {
   color: #ffaf5f !important;
