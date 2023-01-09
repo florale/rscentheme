@@ -18,47 +18,48 @@
   --gutter-foreground: #483b358b;
 
   /* syntax */
-  --language-constant: #372617; 
+  --language-constant: #693741; 
   --numeric-constant: #477495; 
-  --string: #7b695b; 
-  --keyword: #5d758f; 
-  --comment: #999999;
+  --string: #536980;
+  --keyword: #826A60; 
+  --comment: #999593;
   --variable: #5a4b44; 
   --support-function: #333; 
-  --operator:  #AB6E60;
-  --paren-col0: #333;
-  --paren-col1: #385b40;
+  --operator:  #A25E7A;
+  --paren-col0: #9E6153;
+  --paren-col1: #3B5C71;
   --paren-col2: #c7a4bf;
   --paren-col3: #ba5266;
   --paren-col4: #718FAD;
   --paren-col5: #B7D0F0;
   --paren-col6: #FDDBC8;
  
-  --shadow-string : #f1ece4
+  --shadow-string : rgba(51, 51, 51, 0.2); 
   --shadow-keyword : #f6f5f1;
 
   --bg-support-function: rgb(191, 211, 226, 0.5); 
-  --bg0: transparent; 
+  --bg0: transparent;
+  --bg1: #C99696;
 
   --type-declaration: #A2C2EC;
   --function-declaration: #C99696;
   --regex: rgb(209, 105, 105);
 
-  --popup-bg: #605a52;
+  --popup-bg: #6F8FAF;
   --popup-fg: #f7f3ee;
 
   /* console */
-  --console-error: #E9C9CE; /* cliffside */
-  --console-keyword: #B08880;
-  --console-language-constant: #90515a;
+  --console-error: #999593;
+  --console-keyword: #6B87A1;
+  --console-language-constant: #7E6F5E;
   --console-keyword-bg : rgb(191, 211, 226, 0.7);
   
   /* markdown */
-  --heading: #48413b;
+  --heading: #785648;
   --inline-code: var(--string);
-  --markup-heading: #9d3e50;
-  --markup-list: #ba5266;
-  --meta-tag: #90766B;
+  --markup-heading: #477495;
+  --markup-list: #9d3e50;
+  --meta-tag: #785648;
 
   /* terminal */
   --terminal-background: #fff;
@@ -66,16 +67,17 @@
 
   /* misc */
   --breakpoint: #D1EAFF;
-  --xtcol1: #FDDBC8;
-  --xtcol2: #CEA3AC;
+  --xtcol1: #BA5266;
+  --xtcol2: #6B87A1;
   --xtcol3: #944C4C;
-  --xtcol4: #90515a; 
-  --xtcol5: #B0CFF7;
-  --xtcol6: #385b40;
+  --xtcol4: #88584c; 
+  --xtcol5: #D58B74;
+  --xtcol6: #527293;
   --xtcol7: #d3d7cf;
   --xtcol8: #555753;
   --xtcol9: #DB9B88;
-  --xtcol10: #8ae234;
+  --xtcol10: #527293;
+  --xtcol214: #BA5266;
 
   /* buttons */
   --button: rgb(191, 211, 226);
@@ -134,7 +136,7 @@
  color: var(--numeric-constant);
 } 
 .ace_string {
-  text-shadow: 2px 2px 4px var(--shadow-string);
+  /* text-shadow: 2px 2px 2px var(--shadow-string); */
   color: var(--string);
 } 
 .ace_keyword {
@@ -211,7 +213,7 @@
 /* rmarkdown strong emphasis */
 .ace_constant.ace_numeric.ace_text {
   font-weight: bold;
-  color: var(--keyword) !important;
+  color: #BF6273 !important;
 }
 .ace_support.ace_function.ace_codebegin, .ace_support.ace_function.ace_codeend {
   background-color: #F3F3F3 !important;
@@ -232,7 +234,7 @@
 }
 /* chunk highlight */
 .ace_marker-layer .ace_selection {
-  background: rgb(237, 224, 221);
+  background: rgba(210, 224, 234, 0.8);
 }
 .ace_marker-layer .ace_step {
  background: rgb(102, 0, 0);
@@ -242,7 +244,7 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
 }  
 .ace_marker-layer .ace_selected-word {
-  background-color : rgba(228, 221, 210, 0.3);
+  background-color : rgba(228, 221, 210, 0.4);
 } 
 .ace_marker-layer .ace_active_debug_line {
   position: absolute;
@@ -255,7 +257,7 @@
 /* console */
 .ace_console_error {
   color: var(--console-error);
-  background-color: #3e4042;
+  background-color: #6F8FAF;
 }
 #rstudio_console_output .ace_keyword {
   color: var(--console-keyword);
@@ -2235,10 +2237,10 @@ input[type="checkbox"].focus-visible {
   background-color: #ff87ff;
 }
 .xtermColor214 {
-  color: #ffaf00 !important;
+  color: var(--xtcol214) !important;
 }
 .xtermBgColor214 {
-  background-color: #ffaf00;
+  background-color: var(--xtcol214);
 }
 .xtermColor215 {
   color: #ffaf5f !important;
