@@ -58,7 +58,7 @@
   --inline-code: var(--string);
   --markup-heading: #598760;
   --markup-list: #F8C568;
-  --meta-tag: #90766B;
+  --meta-tag: #785648;
 
   /* terminal */
   --terminal-background: #fff;
@@ -79,7 +79,7 @@
   --xtcol214: #944C4C;
 
   /* buttons */
-  --button: #ede0dd;
+  --button: #EBDAD7;
   --highlight : var(--bg0);
 
   /* fonts */
@@ -87,8 +87,8 @@
     Arial, sans-serif; 
   
   /* ui */
-  --r-bg: #f6f5f1;
   --bg: #fff;
+  --r-bg: #f6f5f1;
   --font-fg: #333;
   --divider-bg: #f2f2f2;
   --button-bg: var(--button);
@@ -97,7 +97,7 @@
   --input-bg: #f6f5f1;
   --toolbar: #f6f5f1;
   --active-tab: #DEC8C2;
-  --inactive-tab: #f4edeb;
+  --inactive-tab: #DBD3CA;
   --selected-tab-border: #A07268;
   --active-secondary-tab: #f6f5f1;
   --tab-gradient-dark: linear-gradient(to right, #28282800, #282828 13%);
@@ -111,6 +111,8 @@
   --autocomplete-bg: var(--bg);
   --autocomplete-fg: #333;
   --autocomplete-border: #878787;
+  --toolbar-fg: #605a52;
+
 }
 .ace_gutter { /* margin on the side */ 
   background: var(---gutter-background);
@@ -240,7 +242,7 @@
 }
 /* chunk highlight */
 .ace_marker-layer .ace_selection {
-  background: rgba(201, 150, 150, 0.5); 
+  background: rgba(216, 201, 204, 0.7); 
 }
 .ace_marker-layer .ace_step {
  background: rgb(102, 0, 0);
@@ -652,21 +654,6 @@ body.rstudio-themes-flat .rstudio-themes-light-grey,
   border-color: var(--active-tab) !important;
 }
 
-/* tabs */
-.rstudio-themes-light
-  .gwt-TabLayoutPanelTab:not(.gwt-TabLayoutPanelTab-selected)
-  .rstheme_tabLayoutCenter,
-.rstudio-themes-light .rstheme_minimizedWindowObject .rstheme_center {
-  background-color: var(--inactive-tab) !important;
-  border-color: var(--border) !important;
-  cursor: pointer;
-}
-
-utCenter,
-.rstudio-themes-flat .rstudio-themes-light-grey .gwt-TabLayoutPanelTabs {
-  background: var(--bg) !important;
-}
-
 /* Gradients */
 .rstudio-themes-flat
   .rstudio-themes-light
@@ -729,7 +716,7 @@ input[type="text"] {
 
 #rstudio_find_replace_bar :-webkit-any(button) > table:first-child {
   background-color: var(--button-bg) !important;
-  border: solid 0px var(--button);
+  border: solid 1px var(--button-bg);
 
 }
 
@@ -840,7 +827,7 @@ input[type="text"] {
 /* wrapper around 4 panes */
 .rstudio-themes-flat .rstudio-themes-default {
   background: var(--r-bg) !important;
-  color: #605a52 !important;
+  color: var(--toolbar-fg) !important;
 }
 .rstudio-themes-flat .rstudio-themes-default .rstudio-themes-background {
   background: var(--bg) !important;
@@ -852,16 +839,10 @@ input[type="text"] {
 .rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
   box-shadow: 2px 0 0 var( --selected-tab-border) inset;
   border-radius: 0 !important;
-  border-top: solid 0px var( --selected-tab-border)!important;
-  border-right: solid 0px var( --selected-tab-border) !important;
-  border-left: solid 0px var( --selected-tab-border) !important;
+  border-top: solid 1px transparent !important;
+  border-right: solid 1px transparent !important;
+  border-left: solid 1px transparent !important;
   margin-left: 0 !important;
-}
-
-/* toolbar and selected tab */
-.rstudio-themes-flat .rstudio-themes-default .rstheme_center,
-.rstudio-themes-flat .rstudio-themes-default .gwt-TabLayoutPanelTabs .gwt-TabLayoutPanelTab-selected table.rstheme_tabLayoutCenter {
-  background: #93836c !important;
 }
 
 /* inactive tabs */
@@ -904,9 +885,10 @@ input[type="checkbox"].focus-visible {
 /* toolbar */
 .rstudio-themes-flat .rstudio-themes-default .gwt-TabLayoutPanelTab:hover .rstheme_tabLayoutCenter {
   background: var(--inactive-tab) !important;
+  color: var(--fg) !important;
 }
 .rstudio-themes-flat .rstheme_toolbarWrapper button, .rstudio-themes-flat .rstheme_toolbarWrapper a, .rstudio-themes-flat .rstheme_toolbarWrapper div {
-  color: #605a52 !important;
+  color: var(--toolbar-fg) !important;
 }
 .rstudio-themes-flat .rstheme_toolbarWrapper {
   background: var(--active-secondary-tab) !important;
@@ -923,7 +905,7 @@ input[type="checkbox"].focus-visible {
 }
 .rstudio-themes-flat #rstudio_workbench_panel_find_in_files td[colspan="2"] {
   /* file name in Find in Files */
-  color: #605a52;
+  color: var(--toolbar--fg);
 }
 /* pane toolbars */
 .rstheme_secondaryToolbar, .rstudio-themes-flat .dataGridHeader {
