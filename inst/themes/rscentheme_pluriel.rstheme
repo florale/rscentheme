@@ -81,7 +81,7 @@
 
   /* buttons */
   --button: rgba(216, 201, 204, 0.7); 
-  --highlight : rgba(217, 229, 227, 0.7);
+  --highlight : transparent;
   
   /* fonts */
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
