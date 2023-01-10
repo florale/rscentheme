@@ -45,7 +45,7 @@
   --function-declaration: #C99696;
   --regex: rgb(209, 105, 105);
 
-  --popup-bg: #EA9592;
+  --popup-bg: #78686b;
   --popup-fg: #f7f3ee;
 
   /* console */
@@ -99,7 +99,7 @@
   --input-bg: #f6f5f1;
   --toolbar: #f1ece4;
   --active-tab: #FAD899;
-  --inactive-tab: #EFF3FA;
+  --inactive-tab: #78686b;
   --selected-tab-border: #90766B;
   --active-secondary-tab: #f6f5f1;
   --tab-gradient-dark: linear-gradient(to right, #28282800, #F1E8D4 13%);
@@ -212,12 +212,12 @@
 /* rmarkdown emphasis */
 .ace_constant.ace_language.ace_boolean.ace_text {
   font-style: italic;
-  color: var(--console-language-constant) !important;
+  color: var(--keyword) !important;
 }
 /* rmarkdown strong emphasis */
 .ace_constant.ace_numeric.ace_text {
   font-weight: bold;
-  color: #BF6273 !important;
+  color: var(--console-language-constant) !important;
 }
 .ace_support.ace_function.ace_codebegin, .ace_support.ace_function.ace_codeend {
   background-color: #F3F3F3 !important;
@@ -656,16 +656,6 @@ body.rstudio-themes-flat .rstudio-themes-light-grey,
   border-color: var(--border) !important;
 }
 
-/* tabs */
-.rstudio-themes-light
-  .gwt-TabLayoutPanelTab:not(.gwt-TabLayoutPanelTab-selected)
-  .rstheme_tabLayoutCenter,
-.rstudio-themes-light .rstheme_minimizedWindowObject .rstheme_center {
-  background-color: var(--inactive-tab) !important;
-  border-color: var(--border) !important;
-  cursor: pointer;
-}
-
 /* Gradients */
 .rstudio-themes-flat
   .rstudio-themes-light
@@ -833,9 +823,9 @@ input[type="text"] {
 .rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
   box-shadow: 2px 0 0 var( --selected-tab-border) inset;
   border-radius: 0 !important;
-  border-top: 0 !important;
-  border-right: 0  !important;
-  border-left: 0!important;
+  border-top: solid 1px transparent !important;
+  border-right: solid 1px transparent !important;
+  border-left: solid 1px transparent !important;
   margin-left: 0 !important;
 }
 
@@ -880,6 +870,7 @@ input[type="checkbox"].focus-visible {
 /* toolbar */
 .rstudio-themes-flat .rstudio-themes-default .gwt-TabLayoutPanelTab:hover .rstheme_tabLayoutCenter {
   background: var(--inactive-tab) !important;
+  color: var(--bg) !important;
 }
 .rstudio-themes-flat .rstheme_toolbarWrapper button, .rstudio-themes-flat .rstheme_toolbarWrapper a, .rstudio-themes-flat .rstheme_toolbarWrapper div {
   color: var(--toolbar-fg) !important;
