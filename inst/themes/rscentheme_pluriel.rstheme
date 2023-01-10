@@ -59,7 +59,7 @@
   --inline-code: var(--string);
   --markup-heading: 986998;
   --markup-list: #4C5E46;
-  --meta-tag: #90766B;
+  --meta-tag: #785648;
 
   /* terminal */
   --terminal-background: #fff;
@@ -665,16 +665,6 @@ body.rstudio-themes-flat .rstudio-themes-light-grey,
   border-color: var(--border) !important;
 }
 
-/* tabs */
-.rstudio-themes-light
-  .gwt-TabLayoutPanelTab:not(.gwt-TabLayoutPanelTab-selected)
-  .rstheme_tabLayoutCenter,
-.rstudio-themes-light .rstheme_minimizedWindowObject .rstheme_center {
-  background-color: var(--inactive-tab) !important;
-  border-color: var(--border) !important;
-  cursor: pointer;
-}
-
 /* Gradients */
 .rstudio-themes-flat
   .rstudio-themes-light
@@ -737,7 +727,7 @@ input[type="text"] {
 
 #rstudio_find_replace_bar :-webkit-any(button) > table:first-child {
   background-color: var(--button-bg) !important;
-  border: solid 0px var(--button);
+  border: solid 1px var(--button);
 
 }
 
@@ -860,9 +850,9 @@ input[type="text"] {
 .rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
   box-shadow: 2px 0 0 var( --selected-tab-border) inset;
   border-radius: 0 !important;
-  border-top: solid 0px var( --selected-tab-border)!important;
-  border-right: solid 0px var( --selected-tab-border) !important;
-  border-left: solid 0px var( --selected-tab-border) !important;
+  border-top: solid 1px transparent !important;
+  border-right: solid 1px transparent !important;
+  border-left: solid 1px transparent !important;
   margin-left: 0 !important;
 }
 
@@ -906,6 +896,7 @@ input[type="checkbox"].focus-visible {
 /* toolbar */
 .rstudio-themes-flat .rstudio-themes-default .gwt-TabLayoutPanelTab:hover .rstheme_tabLayoutCenter {
   background: var(--inactive-tab) !important;
+  color: var(--fg) !important;
 }
 .rstudio-themes-flat .rstheme_toolbarWrapper button, .rstudio-themes-flat .rstheme_toolbarWrapper a, .rstudio-themes-flat .rstheme_toolbarWrapper div {
   color: var(--toolbar-fg) !important;
