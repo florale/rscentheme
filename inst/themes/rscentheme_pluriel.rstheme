@@ -6,7 +6,7 @@
   --editor-background-color: 30, 30, 30;
   --editor-background: #FFF;
   --editor-foreground: #333;
-  --cursor : #91bad6;
+  --cursor : #BDA099;
 
   --separator: rgb(68, 68, 68);
   --toolbar: rgb(37, 37, 38);
@@ -15,80 +15,88 @@
 
   /* gutter */
   --gutter-background: #141414;
-  --gutter-foreground: #483B35;
+  --gutter-foreground: #808080;
 
   /* syntax */
-  --language-constant: #333; 
-  --numeric-constant: #5F8C7D; 
-  --string: #4E495E; 
-  --keyword: #7D5C7D;
-  --comment: #BBBBBB;
-  --variable: #606060; 
-  --support-function: #606060; 
-  --operator:  #B5485D;
-  --paren-col0: #6E5092;
-  --paren-col1: #EBB98D;
-  --paren-col2: #C7DCCD;
-  --paren-col3: #FFE9A4;
-  --paren-col4: #718FAD;
-  --paren-col5: #B7D0F0;
-  --paren-col6: #FDDBC8;
+  --language-constant: #974454; 
+  --numeric-constant: #477495;
+  --string: #87697F;
+  --keyword: #7D7098;
+  --comment: #999999;
+  --variable: #333;
+  --support-function: #657393;
+  --operator:  #a65a80;
+  --paren-col0: #333;
+  --paren-col1: #598760;
+  --paren-col2: #986998;
+  --paren-col3: #af3c51;
+  --paren-col4: #95b572;
+  --paren-col5: #9E6153;
+  --paren-col6: #c7a4bf;
  
-  --shadow-string : #d1cedccb;
+  --shadow-string : rgba(51, 51, 51, 0.2); 
   --shadow-keyword : #f6f5f1;
 
-  --bg-support-function: #E8EFEE; 
+  --bg-support-function: transparent; 
+  --bg-variable: transparent;
+  --bg0: rgb(246, 245, 241, 0.8);
+  --bg1: #F0EAF0; 
 
   --type-declaration: #A2C2EC;
-  --function-declaration: #C99696;
+  --function-declaration: #C08585;
   --regex: rgb(209, 105, 105);
 
+  --popup-bg: #d9e5e3;
+  --popup-fg: black;
+
   /* console */
-  --console-error: #E9C9CE; /* cliffside */
-  --console-keyword: #6D6D6D;
-  --console-language-constant: #8a7aad;
+  --console-error: #7a7a7a; 
+  --console-keyword: #7D7098;
+  --console-language-constant: #785648;
 
   /* markdown */
-  --heading: #48413b;
+  --heading: #605464;
   --inline-code: var(--string);
-  --markup-heading: #2a404f;
-  --markup-list: #b0cca6;
+  --markup-heading: 986998;
+  --markup-list: #4C5E46;
   --meta-tag: #90766B;
 
   /* terminal */
   --terminal-background: #fff;
-  --terminal-foreground: #3B5C71;
+  --terminal-foreground: #A59CB8;
 
   /* misc */
-  --breakpoint: #D1EAFF;
-  --xtcol1: #FDDBC8;
-  --xtcol2: #CEA3AC;
+  --breakpoint: #b9accd;
+  --xtcol1: #C99696;
+  --xtcol2: #477495; 
   --xtcol3: #944C4C;
-  --xtcol4: #7EA284; 
-  --xtcol5: #B0CFF7;
-  --xtcol6: #b0cca6;
+  --xtcol4: #558573; 
+  --xtcol5: #68b0ab;
+  --xtcol6: #58706B;
   --xtcol7: #d3d7cf;
   --xtcol8: #555753;
   --xtcol9: #DB9B88;
   --xtcol10: #8ae234;
+  --xtcol214: #785648;
 
   /* buttons */
-  --button: #dccedc;
-  --highlight : #f3f0e7;
-
+  --button: rgba(216, 201, 204, 0.7); 
+  --highlight : rgba(217, 229, 227, 0.7);
+  
   /* fonts */
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif; 
   
   /* ui */
   --bg: #fff;
+  --r-bg: #f2f2f2;
   --font-fg: #333;
   --divider-bg: #f2f2f2;
   --button-bg: var(--button);
   --button-bg-selected: #f2f2f2;
   --border: var(--button-bg-selected);
   --input-bg: #f6f5f1;
-  --toolbar: #d1cedccb;
+  --toolbar: rgba(209, 206, 220, 0.7);
   --active-tab: #babed7;
   --inactive-tab: #f3f3f3;
   --selected-tab-border: #9c8aa4;
@@ -104,6 +112,9 @@
   --autocomplete-bg: var(--bg);
   --autocomplete-fg: #333;
   --autocomplete-border: #878787;
+  --toolbar-fg: #605a52;
+  --active-tab-fg: var(--fg);
+
 }
 .ace_gutter { /* margin on the side */ 
   background: var(---gutter-background);
@@ -128,7 +139,7 @@
  color: var(--numeric-constant);
 } 
 .ace_string {
-  text-shadow: 2px 2px 4px var(--shadow-string);
+  /* text-shadow: 2px 2px 4px var(--shadow-string); */
   color: var(--string);
 } 
 .ace_keyword {
@@ -142,6 +153,7 @@
 } 
 .ace_identifier,
 .ace_variable {
+  background-color: var(--bg-variable) !important;
   color: var(--variable);
 }
 .ace_support.ace_function {
@@ -153,25 +165,32 @@
    color: var(--operator);
 }  
 .ace_paren_color_0 {
- color: var(--paren-col0) !important;
+    background-color: var(--bg1) !important;
+    color: var(--paren-col0) !important;
 }
 .ace_paren_color_1 {
- color: var(--paren-col1) !important;
+  /* background-color: var(--bg0) !important; */
+  color: var(--paren-col1) !important;
 }
 .ace_paren_color_2 {
+  /* background-color: var(--bg1) !important; */
  color: var(--paren-col2) !important;
 }
 .ace_paren_color_3 {
- color: var(--paren-col3) !important;
+  /* background-color: var(--bg0) !important; */
+  color: var(--paren-col3) !important;
 }
 .ace_paren_color_4 {
- color: var(--paren-col4) !important;
+  /* background-color: var(--bg1) !important; */
+  color: var(--paren-col4) !important;
 }
 .ace_paren_color_5 {
- color: var(--paren-col5) !important;
+ /*  background-color: var(--bg0) !important; */
+  color: var(--paren-col5) !important;
 }
 .ace_paren_color_6 {
- color: var(--paren-col6) !important;
+  /* background-color: var(--bg1) !important; */
+  color: var(--paren-col6) !important;
 } 
 .ace_markup.ace_heading {
   color: var(--markup-heading);
@@ -180,15 +199,14 @@
   color: var(--markup-list);
 }
 .ace_heading {
-  background-color : var(--highlight);
   color: var(--heading);
 }
-
 .ace_bracket {
   margin: 0 !important;
   border: 0 !important;
   background-color: rgba(128, 128, 128, 0.5);
 } 
+
 /* rmarkdown code */
 .ace_marker-layer .ace_foreign_line { 
   position: absolute;
@@ -201,10 +219,15 @@
 /* rmarkdown emphasis */
 .ace_constant.ace_language.ace_boolean.ace_text {
   font-style: italic;
+  color: #C08585;
 }
 /* rmarkdown strong emphasis */
 .ace_constant.ace_numeric.ace_text {
   font-weight: bold;
+  color: #6F8FAF;
+}
+.ace_support.ace_function.ace_codebegin, .ace_support.ace_function.ace_codeend {
+  background-color: #F3F3F3 !important;
 }
 /* line/highlight */
 .ace_selection.ace_start {
@@ -218,11 +241,11 @@
 .ace_marker-layer .ace_find_line {
   position: absolute;
   z-index: -1;
-  background-color: rgba(228, 221, 210, 0.8);
+  background-color: rgb(206, 206, 206);
 }
 /* chunk highlight */
 .ace_marker-layer .ace_selection {
-  background: var(--button);
+  background: rgb(207, 206, 206, 0.5);
 }
 .ace_marker-layer .ace_step {
  background: rgb(102, 0, 0);
@@ -232,7 +255,7 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
 }  
 .ace_marker-layer .ace_selected-word {
-  background-color : rgb(191, 211, 226, 0.5);
+  background-color : rgb(207, 206, 206, 0.3);
 } 
 .ace_marker-layer .ace_active_debug_line {
   position: absolute;
@@ -245,7 +268,7 @@
 /* console */
 .ace_console_error {
   color: var(--console-error);
-  background-color: #3e4042;
+  background-color: #EFDFDB;
 }
 #rstudio_console_output .ace_keyword {
   background-color: white !important;
@@ -254,12 +277,11 @@
 #rstudio_console_output .ace_constant.ace_language {
   color: var(--console-language-constant);
 }
- /* not sure what these are for */
  .ace_gutter-active-line {
-  background-color: #9c8aa4;
+  background-color: transparent;
  }
  .ace_indent-guide	 {
-  background-color: #9c8aa4;
+  background-color: transparent;
  }  
  .ace_entity.ace_name.ace_tag, .ace_entity.ace_other.ace_attribute-name, .ace_meta.ace_tag, .ace_string.ace_regexp, .ace_variable {
    color: var(--meta-tag);
@@ -509,12 +531,12 @@
   border-color: var(--grid-border) !important;
 }
 
-/* Packages tab */
+/* Packages tab 
 .rstudio-themes-flat .rstudio-themes-light-grey .dataGridHeader,
 .rstudio-themes-flat .rstudio-themes-light-grey .GD15MCFCHBC,
 .rstudio-themes-flat .rstudio-themes-light-grey .GD15MCFCGCC {
   border-color: #333 !important;
-}
+} */
 
 .rstudio-themes-flat.rstudio-themes-light-menus:-webkit-any(.gwt-MenuItemSeparator, .menuSeparatorInner) {
   border-color: var(--border) !important;
@@ -635,6 +657,14 @@ body.rstudio-themes-flat .rstudio-themes-light-grey,
   border-color: var(--active-tab) !important;
 }
 
+/* active tab */
+.rstudio-themes-flat
+  .gwt-TabLayoutPanelTab.gwt-TabLayoutPanelTab-selected
+  .rstheme_tabLayoutCenter {
+  color: var(--toolbar-fg) !important;
+  border-color: var(--border) !important;
+}
+
 /* tabs */
 .rstudio-themes-light
   .gwt-TabLayoutPanelTab:not(.gwt-TabLayoutPanelTab-selected)
@@ -643,11 +673,6 @@ body.rstudio-themes-flat .rstudio-themes-light-grey,
   background-color: var(--inactive-tab) !important;
   border-color: var(--border) !important;
   cursor: pointer;
-}
-
-utCenter,
-.rstudio-themes-flat .rstudio-themes-light-grey .gwt-TabLayoutPanelTabs {
-  background: var(--bg) !important;
 }
 
 /* Gradients */
@@ -817,7 +842,14 @@ input[type="text"] {
   border-color: black;
 }
 
+
 /* R Studio */
+/* background */
+/* wrapper around 4 panes */
+.rstudio-themes-flat .rstudio-themes-default {
+  background: var(--r-bg) !important;
+  color: var(--toolbar-fg) !important;
+}
 .rstudio-themes-flat .rstudio-themes-default .rstudio-themes-background {
   background: var(--bg) !important;
 }
@@ -826,18 +858,12 @@ input[type="text"] {
   border-color: var(--bg);
 }
 .rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
-  box-shadow: 2px 0 0 (--selected-tab-border) inset;
+  box-shadow: 2px 0 0 var( --selected-tab-border) inset;
   border-radius: 0 !important;
-  border-top: solid 1px #dcd3c6 !important;
-  border-right: solid 1px #dcd3c6 !important;
-  border-left: solid 1px #dcd3c6 !important;
+  border-top: solid 0px var( --selected-tab-border)!important;
+  border-right: solid 0px var( --selected-tab-border) !important;
+  border-left: solid 0px var( --selected-tab-border) !important;
   margin-left: 0 !important;
-}
-
-/* toolbar and selected tab */
-.rstudio-themes-flat .rstudio-themes-default .rstheme_center,
-.rstudio-themes-flat .rstudio-themes-default .gwt-TabLayoutPanelTabs .gwt-TabLayoutPanelTab-selected table.rstheme_tabLayoutCenter {
-  background: #93836c !important;
 }
 
 /* inactive tabs */
@@ -874,7 +900,7 @@ input[type="checkbox"].focus-visible {
 
 .rstudio-themes-flat .rstudio-themes-default .rstheme_center {
   background: var(--active-secondary-tab) !important;
-  border: 
+  border-color: var(--border) !important;
 }
 
 /* toolbar */
@@ -882,7 +908,7 @@ input[type="checkbox"].focus-visible {
   background: var(--inactive-tab) !important;
 }
 .rstudio-themes-flat .rstheme_toolbarWrapper button, .rstudio-themes-flat .rstheme_toolbarWrapper a, .rstudio-themes-flat .rstheme_toolbarWrapper div {
-  color: #605a52 !important;
+  color: var(--toolbar-fg) !important;
 }
 .rstudio-themes-flat .rstheme_toolbarWrapper {
   background: var(--active-secondary-tab) !important;
@@ -899,12 +925,25 @@ input[type="checkbox"].focus-visible {
 }
 .rstudio-themes-flat #rstudio_workbench_panel_find_in_files td[colspan="2"] {
   /* file name in Find in Files */
-  color: #605a52;
+  color: var(--toolbar-fg);
 }
 /* pane toolbars */
 .rstheme_secondaryToolbar, .rstudio-themes-flat .dataGridHeader {
   background: var(--active-secondary-tab) !important;
 }
+
+/* popup */
+
+.rstudio-themes-flat .gwt-PopupPanel .popupContent table {
+  background: var(--popup-bg);
+  border: 0;
+}
+.rstudio-themes-flat .gwt-PopupPanel .popupContent table .gwt-Label {
+  color: var(--popup-fg);
+}
+
+
+
 
 /* xterm */
 .xtermInvertColor { 
@@ -2220,10 +2259,10 @@ input[type="checkbox"].focus-visible {
   background-color: #ff87ff;
 }
 .xtermColor214 {
-  color: #ffaf00 !important;
+  color: var(--xtcol214) !important;
 }
 .xtermBgColor214 {
-  background-color: #ffaf00;
+  background-color: var(--xtcol214);
 }
 .xtermColor215 {
   color: #ffaf5f !important;
