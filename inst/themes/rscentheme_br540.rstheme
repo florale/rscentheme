@@ -51,6 +51,8 @@
   --markup-heading: #8C4B51;
   --markup-list: #7A9579;
   --meta-tag: #90766B;
+  --rmd-emphasis: var(--language-constant);
+  --rmd-strong-emphasis: var(--numeric-constant);
 
   /* terminal */
   --terminal-background: #141414;
@@ -64,8 +66,8 @@
   --xtcol4: #7EA284; 
   --xtcol5: #90766B;
   --xtcol6: #b0cca6;
-  --xtcol7: #d3d7cf;
-  --xtcol8: #555753;
+  --xtcol7: #D1C6BB;
+  --xtcol8: #645454;
   --xtcol9: #DB9B88;
   --xtcol10: #8ae234;
   --xtcol214: #FFE4A8;
@@ -197,10 +199,12 @@
 /* rmarkdown emphasis */
 .ace_constant.ace_language.ace_boolean.ace_text {
   font-style: italic;
+  color: var(--rmd-emphasis) !important;
 }
 /* rmarkdown strong emphasis */
 .ace_constant.ace_numeric.ace_text {
   font-weight: bold;
+  color: var(--rmd-strong-emphasis) !important;
 }
 /* line/highlight */
 .ace_selection.ace_start {
@@ -846,9 +850,9 @@ input[type="text"] {
 .rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
   box-shadow: 2px 0 0  var( --selected-tab-border) inset;
   border-radius: 0 !important;
-  border-top: solid 1px transparent !important;
+  border-top: solid 0px transparent !important;
   border-right: solid 1px transparent !important;
-  border-left: solid 1px transparent !important;
+  border-left: solid 0px transparent !important;
   margin-left: 0 !important;
 } 
 
@@ -935,16 +939,16 @@ input[type="text"] {
   background-color: var(--xtcol6);
 }
 .xtermColor7 {
-  color: #d3d7cf !important;
+  color: var(--xtcol7) !important;
 }
 .xtermBgColor7 {
-  background-color: #d3d7cf;
+  background-color: var(--xtcol7);
 }
 .xtermColor8 {
-  color: #555753 !important;
+  color: var(--xtcol8) !important;
 }
 .xtermBgColor8 {
-  background-color: #555753;
+  background-color: var(--xtcol8);
 }
 .xtermColor9 {
   color: #ef2929 !important;
