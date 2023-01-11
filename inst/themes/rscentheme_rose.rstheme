@@ -51,6 +51,8 @@
   --markup-heading: #C99696;
   --markup-list: #EE6C9D;
   --meta-tag: #90766B;
+  --rmd-emphasis: var(--language-constant);
+  --rmd-strong-emphasis: var(--numeric-constant);
 
   /* terminal */
   --terminal-background: #141414;
@@ -58,14 +60,14 @@
 
   /* misc */
   --breakpoint: #FFBBA5;
-  --xtcol1: #E1B7BE;
+  --xtcol1: #de3163;
   --xtcol2: #D0748B;
   --xtcol3: #944C4C;
   --xtcol4: #7EA284; 
-  --xtcol5: #E30B5C;
+  --xtcol5: #E1B7BE;
   --xtcol6: #D0748B;
-  --xtcol7: #d3d7cf;
-  --xtcol8: #555753;
+  --xtcol7: #EBDAD7;
+  --xtcol8: #645454;
   --xtcol9: #DB9B88;
   --xtcol10: #8ae234;
   --xtcol214: #DB9B88;
@@ -93,7 +95,7 @@
   --tab-gradient-dark: linear-gradient(to right, #28282800, #282828 13%);
   --tab-gradient-light: linear-gradient(to right, #3b3b3b, #3b3b3b00);
   --grid-border: #2f2f2f;
-  --scrollbar-bg: transparent;
+  --scrollbar-bg: #333333;
   --scrollbar-thumb-bg: #282828;
   --scrollbar-bg-hover: #333333;
   --scrollbar-bg-active: var(--button);
@@ -198,10 +200,12 @@
 /* rmarkdown emphasis */
 .ace_constant.ace_language.ace_boolean.ace_text {
   font-style: italic;
+  color: var(--rmd-emphasis) !important;
 }
 /* rmarkdown strong emphasis */
 .ace_constant.ace_numeric.ace_text {
   font-weight: bold;
+  color: var(--rmd-strong-emphasis) !important;
 }
 /* line/highlight */
 .ace_selection.ace_start {
@@ -651,7 +655,7 @@ body.rstudio-themes-flat .rstudio-themes-dark-grey,
 /* toolbar */
 .rstudio-themes-flat .rstudio-themes-dark .gwt-TabLayoutPanelTab:hover .rstheme_tabLayoutCenter {
   background: var(--inactive-tab) !important;
-  color: var(--fg) !important;
+  color: var(--active-tab-fg) !important;
 }
 
 /* Gradients */
@@ -846,9 +850,9 @@ input[type="text"] {
 .rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
   box-shadow: 3px 0 0 var(--selected-tab-border) inset;
   border-radius: 0 !important;
-  border-top: solid 1px transparent !important;
+  border-top: solid 0px transparent !important;
   border-right: solid 1px transparent !important;
-  border-left: solid 1px transparent !important;
+  border-left: solid 0px transparent !important;
   margin-left: 0 !important;
 } 
 
@@ -935,16 +939,16 @@ input[type="text"] {
   background-color: var(--xtcol6);
 }
 .xtermColor7 {
-  color: #d3d7cf !important;
+  color: var(--xtcol7) !important;
 }
 .xtermBgColor7 {
-  background-color: #d3d7cf;
+  background-color: var(--xtcol7);
 }
 .xtermColor8 {
-  color: #555753 !important;
+  color: var(--xtcol8) !important;
 }
 .xtermBgColor8 {
-  background-color: #555753;
+  background-color: var(--xtcol8);
 }
 .xtermColor9 {
   color: #ef2929 !important;
