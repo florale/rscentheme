@@ -5,8 +5,8 @@
 \title{Apply rscentheme theme}
 \usage{
 scented_theme(
-  name = c("rose", "iris", "mountainwater", "woodsea", "br540", "woodsea_light",
-    "blanche", "pluriel", "delina", "soleilblanc")
+  name = c("rose", "iris", "mountainwater", "woodsea", "br540", "blanche", "pluriel",
+    "delina", "soleil", "mixemotion", "h24")
 )
 }
 \value{

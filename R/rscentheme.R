@@ -36,11 +36,12 @@ scented_theme <- function (name = c("rose",
                                     "mountainwater", 
                                     "woodsea",
                                     "br540",
-                                    "woodsea_light",
                                     "blanche",
                                     "pluriel",
                                     "delina",
-                                    "soleilblanc")) {
+                                    "soleil",
+                                    "mixemotion",
+                                    "h24")) {
   
   ## check RStudio API available
   if(!rstudioapi::isAvailable()) stop("rscentheme must be installed from within RStudio.")
