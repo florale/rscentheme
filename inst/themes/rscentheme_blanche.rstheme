@@ -9,7 +9,6 @@
   --cursor : #c78f83;
 
   --separator: rgb(68, 68, 68);
-  --toolbar: rgb(37, 37, 38);
   --tab: rgb(45, 45, 45);
   --selected-tab: var(--editor-background);
 
@@ -34,13 +33,14 @@
   --paren-col5: #B7D0F0;
   --paren-col6: #FDDBC8;
  
-  --shadow-string : rgba(51, 51, 51, 0.2); 
+  --shadow-string : transparent; 
   --shadow-keyword : #f6f5f1;
 
   --bg-support-function: rgb(191, 211, 226, 0.5); 
   --bg0: transparent;
-  --bg1: #C99696;
-
+  --bg1: transparent;
+  --bracket-bg: #e4ddd2;
+  
   --type-declaration: #A2C2EC;
   --function-declaration: #C99696;
   --regex: rgb(209, 105, 105);
@@ -60,6 +60,8 @@
   --markup-heading: #477495;
   --markup-list: #9d3e50;
   --meta-tag: #785648;
+  --rmd-emphasis: var(--operator);
+  --rmd-strong-emphasis: var(--support-function);
 
   /* terminal */
   --terminal-background: #fff;
@@ -71,13 +73,13 @@
   --xtcol2: #6B87A1;
   --xtcol3: #944C4C;
   --xtcol4: #88584c; 
-  --xtcol5: #D58B74;
+  --xtcol5: #ba5266;
   --xtcol6: #527293;
-  --xtcol7: #d3d7cf;
-  --xtcol8: #555753;
+  --xtcol7: #bfd3e2;
+  --xtcol8: #645454;
   --xtcol9: #DB9B88;
   --xtcol10: #527293;
-  --xtcol214: #BA5266;
+  --xtcol214: #af3c51;
 
   /* buttons */
   --button: rgb(191, 211, 226);
@@ -113,7 +115,7 @@
   --autocomplete-fg: #333;
   --autocomplete-border: #878787;
   --toolbar-fg: #605a52;
-  --active-tab-fg: var(--fg);
+  --active-tab-fg: var(--toolbar-fg);
 
 }
 .ace_gutter { /* margin on the side */ 
@@ -139,12 +141,12 @@
  color: var(--numeric-constant);
 } 
 .ace_string {
-  /* text-shadow: 2px 2px 2px var(--shadow-string); */
+  text-shadow: 2px 2px 2px var(--shadow-string);
   color: var(--string);
 } 
 .ace_keyword {
   text-shadow: 2px 2px 4px var(--shadow-keyword);
-   color: var(--keyword);
+  color: var(--keyword);
 } 
 .ace_comment {
   font-style: italic;
@@ -197,7 +199,7 @@
 .ace_bracket {
   margin: 0 !important;
   border: 0 !important;
-  background-color: rgb(237, 224, 221);
+  background-color: var(--bracket-bg);
 } 
 /* rmarkdown code */
 .ace_marker-layer .ace_foreign_line { 
@@ -822,9 +824,9 @@ input[type="text"] {
 .rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
   box-shadow: 2px 0 0 var( --selected-tab-border) inset;
   border-radius: 0 !important;
-  border-top: 0 !important;
-  border-right: 0  !important;
-  border-left: 0!important;
+  border-top: solid 0px transparent !important;
+  border-right: solid 1px transparent !important;
+  border-left: solid 0px transparent !important;
   margin-left: 0 !important;
 }
 
@@ -869,7 +871,7 @@ input[type="checkbox"].focus-visible {
 /* toolbar */
 .rstudio-themes-flat .rstudio-themes-default .gwt-TabLayoutPanelTab:hover .rstheme_tabLayoutCenter {
   background: var(--inactive-tab) !important;
-  color: var(--fg) !important;
+  color: var(--active-tab-fg) !important;
 }
 .rstudio-themes-flat .rstheme_toolbarWrapper button, .rstudio-themes-flat .rstheme_toolbarWrapper a, .rstudio-themes-flat .rstheme_toolbarWrapper div {
   color: var(--toolbar-fg) !important;
@@ -990,16 +992,16 @@ input[type="checkbox"].focus-visible {
   background-color: var(--xtcol6);
 }
 .xtermColor7 {
-  color: #d3d7cf !important;
+  color: var(--xtcol7) !important;
 }
 .xtermBgColor7 {
-  background-color: #d3d7cf;
+  background-color: var(--xtcol7);
 }
 .xtermColor8 {
-  color: #555753 !important;
+  color: var(--xtcol8) !important;
 }
 .xtermBgColor8 {
-  background-color: #555753;
+  background-color: var(--xtcol8);
 }
 .xtermColor9 {
   color: #ef2929 !important;
