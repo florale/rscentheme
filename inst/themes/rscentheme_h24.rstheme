@@ -10,15 +10,14 @@
 
   --separator: rgb(68, 68, 68);
   --tab: rgb(45, 45, 45);
-  --selected-tab: var(--editor-background);
 
   /* gutter */
   --gutter-background: #fff;
   --gutter-foreground: #483b358b;
 
   /* syntax */
-  --language-constant: #BA6341; 
-  --numeric-constant: #8aae81; 
+  --language-constant: #a5ab58; 
+  --numeric-constant: #BA7141; 
   --string: #5E6B39;
   --keyword: #E6AC32; 
   --comment: #949993;
@@ -26,12 +25,12 @@
   --support-function: #987A5E; 
   --operator:  #708d6c;
   --paren-col0: #886545;
-  --paren-col1: #C28BC7;
+  --paren-col1: #C56D3B;
   --paren-col2: #F2CB65;
-  --paren-col3: #C56D3B;
-  --paren-col4: #90BFC5;
-  --paren-col5: #7c7496;
-  --paren-col6: #9cc04e;
+  --paren-col3: #96a53c;
+  --paren-col4: #C28BC7;
+  --paren-col5: #90BFC5;
+  --paren-col6: #7c7496;
  
   --shadow-string : transparent; 
   --shadow-keyword : #f6f5f1;
@@ -45,8 +44,8 @@
   --function-declaration: #C99696;
   --regex: rgb(209, 105, 105);
 
-  --popup-bg: #CBD2C3;
-  --popup-fg: #333;
+  --popup-bg: #D9DCB9;
+  --popup-fg: #606060;
 
   /* console */
   --console-error: #999593;
@@ -55,10 +54,10 @@
   --console-keyword-bg : transparent;
   
   /* markdown */
-  --heading: #785648;
+  --heading: var(--string);
   --inline-code: var(--string);
-  --markup-heading: #7CA471;
-  --markup-list: #C37252;
+  --markup-heading: #d2c153;
+  --markup-list: #7CA471;
   --meta-tag: #785648;
   --rmd-emphasis: var(--operator);
   --rmd-strong-emphasis: var(--support-function);
@@ -83,9 +82,9 @@
 
   /* buttons */
   --button: #E0D7C6;
-  --highlight : #efebe3;
+  --highlight : #E4E4E4;
   --selection: #CBD2C3;
-  --selected-highlight: #F8EED1;
+  --selected-highlight: #eceddc;
 
   /* fonts */
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
