@@ -17,20 +17,20 @@
 
   /* syntax */
   --language-constant: #a5ab58; 
-  --numeric-constant: #BA7141; 
-  --string: #5E6B39;
+  --numeric-constant: #9d6538; 
+  --string: #64713f;
   --keyword: #E6AC32; 
   --comment: #949993;
-  --variable: #71695D; 
+  --variable: #4b463e; /* 71695D */
   --support-function: #987A5E; 
-  --operator:  #708d6c;
+  --operator:  #4a7c59;
   --paren-col0: #886545;
-  --paren-col1: #C56D3B;
+  --paren-col1: #7a709a;
   --paren-col2: #F2CB65;
   --paren-col3: #96a53c;
   --paren-col4: #C28BC7;
   --paren-col5: #90BFC5;
-  --paren-col6: #7c7496;
+  --paren-col6: #C56D3B;
  
   --shadow-string : transparent; 
   --shadow-keyword : #f6f5f1;
@@ -57,7 +57,7 @@
   --heading: var(--string);
   --inline-code: var(--string);
   --markup-heading: #d2c153;
-  --markup-list: #7CA471;
+  --markup-list: #708d6c;
   --meta-tag: #785648;
   --rmd-emphasis: var(--operator);
   --rmd-strong-emphasis: var(--support-function);
@@ -82,9 +82,9 @@
 
   /* buttons */
   --button: #E0D7C6;
-  --highlight : #E4E4E4;
+  --highlight : #eceddc;
   --selection: #CBD2C3;
-  --selected-highlight: #eceddc;
+  --selected-highlight: #E4E4E4;
 
   /* fonts */
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
