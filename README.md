@@ -12,14 +12,14 @@
 is an package with themes for R Studio inspired by perfumes. 
 Below you will find instructions on how to install and apply the themes to your R Studio. 
 
-# Installation
-To install `rscentheme`, type
+## Installation
+To install `rscentheme`, use
 
 ```r
 remotes::install_github("florale/rscentheme")
 ```
 
-# Usage
+## Usage
 `rscentheme` currently offers **5** themes in Dark mode:
 
 - `rose` inspired by Rose of No Man's Land Byredo.
@@ -52,7 +52,7 @@ Lastly, you can uninstall any `rscentheme` theme by running
 unscented_theme()
 ```
 
-# Recommended RStudio settings
+## Recommended RStudio settings
 
 The following settings are recommended:
 - <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Highlight selected word**
@@ -60,5 +60,5 @@ The following settings are recommended:
 - <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Highlight R function calls**
 - <kbd>Tools</kbd> → <kbd>Global Options…</kbd> → <kbd>Code</kbd> → <kbd>Display</kbd> → **☑ Rainbow parentheses**
 
-# Supported OS
+## Supported OS
 `rscentheme` has only been tested on MAC OS. Feedback from other systems is welcome.
