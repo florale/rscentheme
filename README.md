@@ -1,6 +1,6 @@
 <!-- badges: start -->
 [![CRAN](https://www.r-pkg.org/badges/version/rscentheme)](https://cran.r-project.org/package=rscentheme)
-[![release]](https://img.shields.io/github/v/release/florale/rscentheme?sort=semver&style=flat-square)](https://github.com/anthonynorth/rscodeio/releases/latest)
+[![release](https://img.shields.io/github/v/release/florale/rscentheme?sort=semver&style=flat-square)](https://github.com/anthonynorth/rscodeio/releases/latest)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
  
