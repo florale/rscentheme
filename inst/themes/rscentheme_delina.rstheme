@@ -49,9 +49,11 @@
   --popup-fg: #7a7a7a;
 
   /* console */
-  --console-error: #97898C;
   --console-keyword: #A15F6C;
   --console-language-constant: #7E6F5E;
+
+  --console-error: #97898C;
+  --console-error-bg: #EFDFDB;
 
   /* markdown */
   --heading: var(--support-function);
@@ -269,7 +271,7 @@
 /* console */
 .ace_console_error {
   color: var(--console-error);
-  background-color: rgba(201, 150, 150, 0.5); 
+  background-color: var(--console-error-bg);
 }
 #rstudio_console_output .ace_keyword {
   background-color: white !important;
