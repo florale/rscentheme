@@ -1,11 +1,11 @@
+# rscentheme
+
 <!-- badges: start -->
 [![release](https://img.shields.io/github/v/release/florale/rscentheme)](https://github.com/florale/rscentheme/releases/latest)
 [![CRAN](https://www.r-pkg.org/badges/version/rscentheme)](https://cran.r-project.org/package=rscentheme)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
  
-# rscentheme
-
 **R** **S**tudio S**cent**ed T**heme**s
 is an package with themes for R Studio inspired by perfumes. 
 Below you will find instructions on how to install and apply the themes to your R Studio. 
