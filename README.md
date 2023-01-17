@@ -1,11 +1,14 @@
 <!-- badges: start -->
-[![CRAN Version](https://www.r-pkg.org/badges/version/rscentheme)](https://cran.r-project.org/package=rscentheme)
+[![CRAN](https://www.r-pkg.org/badges/version/rscentheme)](https://cran.r-project.org/package=rscentheme)
+[![release]](https://img.shields.io/github/v/release/florale/rscentheme?sort=semver&style=flat-square)](https://github.com/anthonynorth/rscodeio/releases/latest)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
  
 **R** **S**tudio S**cent**ed T**heme**s
 is an package with themes for R Studio inspired by perfumes. 
 Below you will find instructions on how to install and apply the themes to your R Studio. 
+
+![](https://github.com/florale/rscentheme/tree/main/inst/media/rscentheme.gif)
 
 # Installation
 To install `rscentheme`, type
@@ -28,7 +31,7 @@ And **5** themes in Light mode:
 - `blanche` inspired by Blanche Byredo.
 - `pluriel` inspired by Feminin and Masculin Pluriel Maison Francis Kurkdjian.
 - `delina` inspired by Delina Parfums de Marly.
-- `soleilblanc` inspired by Soleil Blanc Tom Ford.
+- `soleil` inspired by Soleil Blanc Tom Ford.
 - `h24` inspired by H24 Hermès.
 
 You can install all themes using the following code
@@ -46,21 +49,6 @@ Lastly, you can uninstall any `rscentheme` theme by running
 ```r
 unscented_theme()
 ```
-
-# Themes (media TBA)
-## Dark themes
-### Rose of No Man's Land `rose`
-### Silver Mountain Water `mountainwater`
-### Wood Sage and Sea Salt Dark `woodsea`
-### Baccarat Rouge 540 `br540`
-### Iris Malikhân `iris`
-
-## Light themes
-### Blanche `blanche`
-### Pluriel `pluriel`
-### Delina `delina`
-### Soleil Blanc `soleilblanc`
-### H24 `h24`
 
 # Recommended RStudio settings
 
