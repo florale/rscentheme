@@ -20,7 +20,7 @@
   --numeric-constant: #9d6538; 
   --string: #64713f;
   --keyword: #E6AC32; 
-  --comment: #949993;
+  --comment: #708d6c;
   --variable: #4b463e; /* 71695D */
   --support-function: #987A5E; 
   --operator:  #4a7c59;
