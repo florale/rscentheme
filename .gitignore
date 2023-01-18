@@ -41,3 +41,5 @@ vignettes/*.pdf
 rscentheme.Rproj
 
 *.png
+
+inst/example_theme.R
