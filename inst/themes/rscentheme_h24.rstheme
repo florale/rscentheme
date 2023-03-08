@@ -28,7 +28,7 @@
   --paren-col1: #7a709a;
   --paren-col2: #F2CB65;
   --paren-col3: #96a53c;
-  --paren-col4: #C28BC7;
+  --paren-col4: #9B6F9F;
   --paren-col5: #90BFC5;
   --paren-col6: #C56D3B;
  
@@ -1013,10 +1013,10 @@ input[type="checkbox"].focus-visible {
   background-color: #ef2929;
 }
 .xtermColor10 {
-  color: #8ae234 !important;
+  color: var(--xtcol10) !important;
 }
 .xtermBgColor10 {
-  background-color: #8ae234;
+  background-color: var(--xtcol10);
 }
 .xtermColor11 {
   color: #fce94f !important;
