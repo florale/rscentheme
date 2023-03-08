@@ -19,19 +19,19 @@
   /* syntax */
   --language-constant: #944C4C;
   --numeric-constant: #D0748B;
-  --string: #E9C9CE;
+  --string: rgba(233, 201, 206);
   --keyword: #D0B2A9;
   --comment: #97898C;
   --variable: #F8F8F0;
-  --support-function: #EFE6DF;
+  --support-function: #F0DBE0;
   --operator:  #B0CCA6;
   --paren-col0: #FBBFA5;
-  --paren-col1: #D2EACE;
+  --paren-col1: #C9B5B5;
   --paren-col2: #F1C5CA;
   --paren-col3: #C55E6C;
-  --paren-col4: #B0CCA6;
-  --paren-col5: #EE6C9D;
-  --paren-col6: #FDDBC8;
+  --paren-col4: #D2EACE;
+  --paren-col5: #FDDBC8;
+  --paren-col6: #C99696;
  
   --type-declaration: #B7D0F0;
   --function-declaration: #C99696;
@@ -69,7 +69,7 @@
   --xtcol7: #EBDAD7;
   --xtcol8: #645454;
   --xtcol9: #DB9B88;
-  --xtcol10: #8ae234;
+  --xtcol10: #D0748B;
   --xtcol214: #DB9B88;
 
   /* buttons */
@@ -956,11 +956,12 @@ input[type="text"] {
 .xtermBgColor9 {
   background-color: #ef2929;
 }
+# bar when installing package
 .xtermColor10 {
-  color: #8ae234 !important;
+  color: var(--xtcol10) !important;
 }
 .xtermBgColor10 {
-  background-color: #8ae234;
+  background-color: var(--xtcol10);
 }
 .xtermColor11 {
   color: #fce94f !important;
