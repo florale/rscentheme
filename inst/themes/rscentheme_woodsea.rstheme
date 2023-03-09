@@ -14,7 +14,7 @@
 
   /* gutter */
   --gutter-background: #141414;
-  --gutter-foreground: #483B35;
+  --gutter-foreground: #7D6969;
 
   /* syntax */
   --language-constant: #FDE8D1; /* sun screen */

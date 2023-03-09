@@ -14,7 +14,7 @@
 
   /* gutter */
   --gutter-background: #141414;
-  --gutter-foreground: #253027;
+  --gutter-foreground: #505050;
 
   /* syntax */
   --language-constant: #58715C;
