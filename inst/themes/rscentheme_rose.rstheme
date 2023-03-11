@@ -19,18 +19,18 @@
   /* syntax */
   --language-constant: #944C4C;
   --numeric-constant: #D0748B;
-  --string: rgba(233, 201, 206);
+  --string: #F0DBE0;
   --keyword: #D0B2A9;
   --comment: #97898C;
   --variable: #F8F8F0;
-  --support-function: #F0DBE0;
+  --support-function: #E9C9CE;
   --operator:  #B0CCA6;
   --paren-col0: #FBBFA5;
   --paren-col1: #C9B5B5;
-  --paren-col2: #F1C5CA;
+  --paren-col2: #F4E7E7;
   --paren-col3: #C55E6C;
-  --paren-col4: #D2EACE;
-  --paren-col5: #FDDBC8;
+  --paren-col4: #FDDBC8;
+  --paren-col5: #F4E7E7;
   --paren-col6: #C99696;
  
   --type-declaration: #B7D0F0;
