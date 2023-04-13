@@ -70,6 +70,10 @@
    --xtcol8: #c5bbb1;
    --xtcol9: #ef2929;
    --xtcol10: #8ae234;
+   --xtcol11: #7699bb;
+   --xtcol12: #7699bb;
+   --xtcol13: #7699bb;
+   --xtcol14: #D1B9AC;
    --xtcol214: #6D79A3;
 
   /* buttons */
@@ -951,16 +955,17 @@ input[type="text"] {
   background-color: var(--xtcol8);
 }
 .xtermColor9 {
-  color: #ef2929 !important;
+  color: var(--xtcol9) !important;
 }
 .xtermBgColor9 {
-  background-color: #ef2929;
+  background-color: var(--xtcol9);
 }
+/* bar when installing package */
 .xtermColor10 {
-  color: #8ae234 !important;
+  color: var(--xtcol10) !important;
 }
 .xtermBgColor10 {
-  background-color: #8ae234;
+  background-color: var(--xtcol10);
 }
 .xtermColor11 {
   color: #fce94f !important;
@@ -969,10 +974,10 @@ input[type="text"] {
   background-color: #fce94f;
 }
 .xtermColor12 {
-  color: #729fcf !important;
+  color: var(--xtcol12) !important;
 }
 .xtermBgColor12 {
-  background-color: #729fcf;
+  background-color: var(--xtcol12);
 }
 .xtermColor13 {
   color: #ad7fa8 !important;
@@ -981,10 +986,10 @@ input[type="text"] {
   background-color: #ad7fa8;
 }
 .xtermColor14 {
-  color: #34e2e2 !important;
+  color: var(--xtcol14) !important;
 }
 .xtermBgColor14 {
-  background-color: #34e2e2;
+  background-color: var(--xtcol14);
 }
 .xtermColor15 {
   color: #eeeeec !important;

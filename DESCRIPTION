@@ -1,11 +1,11 @@
 Package: rscentheme
 Title: A collection of Perfume-inspired Themes for R Studio
-Version: 0.0.0.9000
+Version: 0.1.1
 Authors@R: 
     person("Flora", "Le", , "13florale@gmail.com", 
     role = c("aut", "cre"),
     comment = c(ORCID = "0000-0003-0089-8167"))
-Description: The package makes your R Studio look lovely and "smell" sophisticated.
+Description: The package provides perfume-inspired themes for R Studio, including both dark and light themes.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

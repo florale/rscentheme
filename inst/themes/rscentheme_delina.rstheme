@@ -80,6 +80,11 @@
   --xtcol8: #785648;
   --xtcol9: #DB9B88;
   --xtcol10: #8ae234;
+  --xtcol11: #7699bb;
+  --xtcol12: #7699bb;
+  --xtcol13: #7699bb;
+  --xtcol14: #D1B9AC;
+   
   --xtcol214: #944C4C;
 
   /* buttons */
@@ -1015,40 +1020,41 @@ input[type="checkbox"].focus-visible {
   background-color: var(--xtcol8);
 }
 .xtermColor9 {
-  color: #ef2929 !important;
+  color: var(--xtcol9) !important;
 }
 .xtermBgColor9 {
-  background-color: #ef2929;
+  background-color: var(--xtcol9);
 }
+/* bar when installing package */
 .xtermColor10 {
-  color: #8ae234 !important;
+  color: var(--xtcol10) !important;
 }
 .xtermBgColor10 {
-  background-color: #8ae234;
+  background-color: var(--xtcol10);
 }
 .xtermColor11 {
-  color: #fce94f !important;
+  color: var(--xtcol11) !important;
 }
 .xtermBgColor11 {
-  background-color: #fce94f;
+  background-color: var(--xtcol11);
 }
 .xtermColor12 {
-  color: #729fcf !important;
+  color: var(--xtcol12) !important;
 }
 .xtermBgColor12 {
-  background-color: #729fcf;
+  background-color: var(--xtcol12);
 }
 .xtermColor13 {
-  color: #ad7fa8 !important;
+  color: var(--xtcol13) !important;
 }
 .xtermBgColor13 {
-  background-color: #ad7fa8;
+  background-color: var(--xtcol13);
 }
 .xtermColor14 {
-  color: #34e2e2 !important;
+  color: var(--xtcol14) !important;
 }
 .xtermBgColor14 {
-  background-color: #34e2e2;
+  background-color: var(--xtcol14);
 }
 .xtermColor15 {
   color: #eeeeec !important;
