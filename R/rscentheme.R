@@ -40,7 +40,6 @@ scented_theme <- function (name = c("rose",
                                     "pluriel",
                                     "delina",
                                     "soleil",
-                                    "mixemotion",
                                     "h24")) {
   
   ## check RStudio API available
