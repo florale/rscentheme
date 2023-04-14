@@ -60,7 +60,7 @@
 
   /* misc */
   --breakpoint: #C9D1C2;
-  --xtcol1: #FFE9A4;
+  --xtcol1: #bec7b4;
   --xtcol2: #7EA284;
   --xtcol3: #FAD899;
   --xtcol4: #b5d5b0; 
@@ -69,11 +69,11 @@
   --xtcol7: #d3d7cf;
   --xtcol8: #645454;
   --xtcol9: #DB9B88;
-  --xtcol10: #679267;
+  --xtcol10: #8da290;
   --xtcol11: #c4957f;
-  --xtcol12: #c4957f;
+  --xtcol12: #999999;
   --xtcol13: #c4957f;
-  --xtcol14: #999999;
+  --xtcol14: #c4957f;
   --xtcol214: #dfb595;
 
   /* buttons */

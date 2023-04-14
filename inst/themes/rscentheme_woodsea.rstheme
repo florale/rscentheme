@@ -56,11 +56,11 @@
 
   /* terminal */
   --terminal-background: #141414;
-  --terminal-foreground: #F9F3F0;
+  --terminal-foreground: #e5dfd5;
 
   /* misc */
   --breakpoint: #D1EAFF;
-  --xtcol1: #abcae9;
+  --xtcol1: #EFD2BD;
   --xtcol2: #FDE8D1;
   --xtcol3: #B0CFF7;
   --xtcol4: #7EA284; 
@@ -69,11 +69,11 @@
   --xtcol7: #bfd3e2;
   --xtcol8: #c5bbb1;
   --xtcol9: #DB9B88;
-  --xtcol10: #b0cca6;
+  --xtcol10: #97acc3;
   --xtcol11: #7699bb;
-  --xtcol12: #c4957f;
+  --xtcol12: #90766B;
   --xtcol13: #7699bb;
-  --xtcol14: #D1B9AC;
+  --xtcol14: #D0DEEC;
   
   --xtcol214: #97acc3;
 

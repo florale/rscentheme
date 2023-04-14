@@ -5,7 +5,7 @@
   /* editor */
   --editor-background-color: 30, 30, 30;
   --editor-background: #141414;
-  --editor-foreground: #f3f0e7;
+  --editor-foreground: #F9F3F0;
   --cursor : #EFE1B3;
 
   --separator: rgb(68, 68, 68);
@@ -22,7 +22,7 @@
   --string: #CDAFA9; /* cedar */
   --keyword: #8F6F64; /* amberwood */
   --comment: #877b79e3; 
-  --variable: #f7f2e6; 
+  --variable: #F9F3F0; 
   --support-function: #FDE8D1; 
   --operator:  #FAD899; /* gold */
   --paren-col0: #7F9364; 
@@ -56,7 +56,7 @@
 
   /* terminal */
   --terminal-background: #141414;
-  --terminal-foreground: #E1ECF9;
+  --terminal-foreground: #D1C6BB;
 
   /* misc */
   --breakpoint: #909f61;
@@ -69,13 +69,12 @@
   --xtcol7: #D1C6BB;
   --xtcol8: #645454;
   --xtcol9: #DB9B88;
-  --xtcol10: #8ae234;
-  --xtcol11: #7699bb;
-  --xtcol12: #7699bb;
+  --xtcol10: #8C4B51;
+  --xtcol11: #c4957f;
+  --xtcol12: #90766B;
   --xtcol13: #7699bb;
-  --xtcol14: #D1B9AC;
-  
-  --xtcol214: #FFE4A8;
+  --xtcol14: #869280;
+  --xtcol214: #FDE8D1;
 
   /* buttons */
   --button: #613821;
