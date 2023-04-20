@@ -45,3 +45,5 @@ rscentheme.Rproj
 inst/example_theme.R
 
 .DS_Store
+
+*.css
