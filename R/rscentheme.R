@@ -24,7 +24,7 @@ rscentheme <- function () {
                                 paste0("rscentheme_", name, ".rstheme")),
                force = TRUE)
       })
-  message(paste0("DONE "), emo::ji("wind_face"))
+  message("DONE")
 }
 
 #' Apply rscentheme theme
@@ -60,7 +60,7 @@ scented_theme <- function (name = c("rose",
       paste(
         "It should be one of the following: ",
         paste0(" ", scent_palette, collapse = ","),
-        paste0(" ", emo::ji("art")),
+        # paste0(" ", emo::ji("art")),
         sep = "\n")))
   }
   ## install and add
