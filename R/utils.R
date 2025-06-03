@@ -12,7 +12,7 @@ scent_palette <- c("rose",
                    "pluriel",
                    "delina",
                    "soleil",
-                   "mixemotion",
+                   # "mixemotion",
                    "h24")
 
 host_os_is_mac <- function() {
@@ -34,7 +34,7 @@ rscentheme_installed <- function() {
   !is.null(rstudioapi::getThemes()$`pluriel - rscentheme`) ||
   !is.null(rstudioapi::getThemes()$`delina - rscentheme`) ||
   !is.null(rstudioapi::getThemes()$`soleil blanc - rscentheme`) ||
-  !is.null(rstudioapi::getThemes()$`mixed emotion - rscentheme`)  ||
+  # !is.null(rstudioapi::getThemes()$`mixed emotion - rscentheme`)  ||
   !is.null(rstudioapi::getThemes()$`h24 - rscentheme`)
   
 }
